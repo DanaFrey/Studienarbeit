@@ -1,0 +1,30 @@
+-Serious Games sind Zwischenglied zwischen Lernspielen und unterhaltenden Videospielen (S. 113)
+-> damit stellen sie das perfekte Medium für Kinder und Jugendliche dar, die selbst in ihrer Freizeit gerne Videospiele spielen, da Serious Games die Kinder unterhalten ihnen aber gleichzeitig etwas beibringen
+-> Lerninhalte werden spielerisch angeignet (S. 113)
+-Serious Games sind eher in der "Denken" Kategorie untergeordnet (S. 113)
+-Videospielelemente wie "Cut-Scenes" hindern den Spieler an eigenen Entscheidungen (in der Zeit der Cutscene) (S. 117)
+-in Storyspielen/Rollenspielen hat man (wenn die Möglichekeit besteht, eigene Handlungen/eigene Dialogwahl zu treffen), die Wahl entweder "in character" zu spielen und seine Handlungen an die Eigenschaften der Spielerfigur anzupassen oder man handelt im Spiel aufgrund seiner eigenen Wertvorstellungen (S. 117)
+-Design Entscheidungen (z.B. Narration, Figuren oder die Spielwelt) können (kulturelle/politische) Werte vermitteln und die Urteilsvermögen des Spielers anregen/fördern (S. 117)
+-> Normüberschreitungen in diesen Designentscheidungen (z.B. einen rassistischen Charakter) können Provokation (es könnte eine Handlung des Spielers, wie zum Beispiel ein Eingriff in sein rassistisches Handeln provoziert werden) oder Stilmittel sein (S. 117)
+- (Element) Spielwelt = herrschbare/kontrollierbare Lebenswelt (S. 118)
+- Es kann nicht mit allen Gegenständen/ NPC interagiert werden -> nur für die Narration relevante Gegenstände interagierbar, oder wenige, unwichtige Kleinigkeiten zur Welterkundung, alle Gegenstände interagierbar machen manchmal zu zeitaufwendig (S. 118)
+-> (Gamedesignelement) es kann ein besonderer Fokus auf bestimmte Figuren gelegt werden, damit der Spieler Sympathie für diese Figur verspürt
+- virtuelle Welt ist ebenfalls begrenzt (S. 118)
+- fast immer möglich die Zeit zu beinflussen (durch Pausenmenü oder speichern und an einem anderen Zeitpunkt weiterspielen) (S. 118)
+- Handlungen können zurückgesetzt und wiederholt werden, wenn ein älterer Spielstand vor dieser Handlung geladen wird (entweder manuell oder durch den Tod der Spielfigur) (S. 118)
+- Eine Handlung findet beim Spielen immer auf zwei Ebenen statt (S. 119)
+-> Handlung in der physischen Welt (Bewegung der Maus, Drücken von Tasten)
+-> Handlung in der virtuellen Welt (Bewegung des Charakters, öffnen eines Menüs)
+- Brettspiele/Spiele im realen Leben basieren meist auf eigener Imagination (S. 119)
+-> Videospiele visualieren das Spielfeld/die Imagination
+-> bsp. das Brettspiel "Dungeons and Dragons" basiert auf Geschichten und der Vorstellung und Weitererzählen dieser, durch Videospiele kann die vorgestellte Welt visualisiert und besser nachempfunden werden
+-> bsp. Räuber und Gendarm, man wird Gefangen und dann an einen Ort gebracht, welcher als Zelle vorzustellen sein soll, in einem Videospiel kann dieser Ort und damit auch die härtere Konsequenz des gefangen werdens besser simuliert werden (also konsequenzlos für die Realität)
+- keine Folgen in der realen Welt bedeutet, dass der Spieler handeln kann ohne das Bedürfnis haben zu müssen der Norm, andern sozialen Zwängen oder Rücksicht auf andere Folge zu leisten (S. 120)
+- Zusammenhänge zwischen virtueller und mentaler Welt (S. 120)
+- Spieler werden Lösungsansätze vorgegeben (an welche sie vielleicht noch nicht gedacht haben) (S. 120)
+-> es gibt allerdings bereits Videospiele, in welchen jede Handlung und Problemlösung möglich ist, ohne auf die vorprogrammierten Handlungen eingeschränkt zu sein (eigene Gedanken, Quelle noch finden)
+- gewalthaltige Konfliktlösung kann problematisch für Kinder bestimmten Alters oder Menschen mit psychischen Problemen sein (S. 121-122)
+- Videospiele können (auch wenn sie manchmal nicht direkt zur Bildung vorgesehen sind), in der Bildung genutzt werden (S. 122)
+-> Die Lernenden sollen zum denken beim Spielen angeregt werden (warum haben sie diese Handlung getan, wie habe ich das Problem gelöst, etc.)
+
+Literatur von diesem Dokument kann ebenfalls verwendet werden (siehe S. 122 - 124)
