@@ -1254,6 +1254,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2cc6816dddbd3714da57e44613d5e92a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  volumeSettings: {fileID: 796970469}
   settingsScreen: {fileID: 796970467}
 --- !u!4 &951720529
 Transform:
