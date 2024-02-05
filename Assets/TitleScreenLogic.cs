@@ -15,7 +15,9 @@ public class TitleScreenLogic : MonoBehaviour
     }
     public void openSettings()
     {
-        settingsScreen.SetActive(true);
+        if (loginScreen.activeSelf) loginScreen.SetActive(false);
+        if (settingsScreen.activeSelf) settingsScreen.SetActive(false);
+        else settingsScreen.SetActive(true);
     }
 
     public void closeSettings()
@@ -25,7 +27,9 @@ public class TitleScreenLogic : MonoBehaviour
 
     public void openLogin()
     {
-        loginScreen.SetActive(true);
+        if (settingsScreen.activeSelf) settingsScreen.SetActive(false);
+        if (loginScreen.activeSelf) loginScreen.SetActive(false);
+        else loginScreen.SetActive(true);
     }
 
     public void closeLogin()
