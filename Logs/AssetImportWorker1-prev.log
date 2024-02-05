@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2022.3/staging' branch; Version is '2022.3.10f1 (ff3792e53c62) revision 16725906'; Using compiler version '192829333'; Build Type 'Release'
-OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'de' Physical Memory: 16334 MB
+OS: 'Windows 10  (10.0.19045) 64bit EnterpriseN' Language: 'de' Physical Memory: 32399 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
@@ -11,13 +11,13 @@ C:\Program Files\Unity\Hub\Editor\2022.3.10f1\Editor\Unity.exe
 -name
 AssetImportWorker1
 -projectPath
-C:/Users/danaf/UnityProjects/Studienarbeit
+C:/Users/da7fr4/UnityProjects/Studienarbeit
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-63332
-Successfully changed project path to: C:/Users/danaf/UnityProjects/Studienarbeit
-C:/Users/danaf/UnityProjects/Studienarbeit
+63178
+Successfully changed project path to: C:/Users/da7fr4/UnityProjects/Studienarbeit
+C:/Users/da7fr4/UnityProjects/Studienarbeit
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -49,67 +49,67 @@ C:/Users/danaf/UnityProjects/Studienarbeit
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [13240] Host "[IP] 192.168.0.150 [Port] 0 [Flags] 2 [Guid] 3545563688 [EditorId] 3545563688 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-CI0FQ5P) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [1940] Host "[IP] 10.204.0.74 [Port] 0 [Flags] 2 [Guid] 221059409 [EditorId] 221059409 [Version] 1048832 [Id] WindowsEditor(7,nb-1315) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [13240] Host "[IP] 192.168.0.150 [Port] 0 [Flags] 2 [Guid] 3545563688 [EditorId] 3545563688 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-CI0FQ5P) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [1940] Host "[IP] 10.204.0.74 [Port] 0 [Flags] 2 [Guid] 221059409 [EditorId] 221059409 [Version] 1048832 [Id] WindowsEditor(7,nb-1315) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with 11 workers.
-Refreshing native plugins compatible for Editor in 11.87 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 30.73 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.10f1 (ff3792e53c62)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.10f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/danaf/UnityProjects/Studienarbeit/Assets
+[Subsystems] Discovering subsystems at path C:/Users/da7fr4/UnityProjects/Studienarbeit/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce RTX 3060 (ID=0x2504)
-    Vendor:   NVIDIA
-    VRAM:     12129 MB
-    Driver:   31.0.15.4617
+    Renderer: Intel(R) Iris(R) Xe Graphics (ID=0x46a8)
+    Vendor:   Intel
+    VRAM:     16199 MB
+    Driver:   31.0.101.4953
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.10f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.10f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.10f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56188
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56152
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.10f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.10f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.015142 seconds.
-- Loaded All Assemblies, in  0.402 seconds
+Registered in 0.025803 seconds.
+- Loaded All Assemblies, in  0.561 seconds
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.249 seconds
-Domain Reload Profiling: 648ms
-	BeginReloadAssembly (112ms)
+- Finished resetting the current domain, in  0.399 seconds
+Domain Reload Profiling: 956ms
+	BeginReloadAssembly (171ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (33ms)
-	RebuildNativeTypeToScriptingClass (16ms)
-	initialDomainReloadingComplete (82ms)
-	LoadAllAssembliesAndSetupDomain (156ms)
-		LoadAssemblies (109ms)
+	RebuildCommonClasses (45ms)
+	RebuildNativeTypeToScriptingClass (27ms)
+	initialDomainReloadingComplete (110ms)
+	LoadAllAssembliesAndSetupDomain (203ms)
+		LoadAssemblies (165ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (153ms)
-			TypeCache.Refresh (151ms)
-				TypeCache.ScanAssembly (136ms)
-			ScanForSourceGeneratedMonoScriptInfo (1ms)
+		AnalyzeDomain (199ms)
+			TypeCache.Refresh (198ms)
+				TypeCache.ScanAssembly (183ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (250ms)
+	FinalizeReload (400ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (191ms)
+		SetupLoadedEditorAssemblies (310ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (11ms)
-			SetLoadedEditorAssemblies (6ms)
+			InitializePlatformSupportModulesInManaged (22ms)
+			SetLoadedEditorAssemblies (8ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (2ms)
-			ProcessInitializeOnLoadAttributes (119ms)
-			ProcessInitializeOnLoadMethodAttributes (54ms)
+			BeforeProcessingInitializeOnLoad (4ms)
+			ProcessInitializeOnLoadAttributes (198ms)
+			ProcessInitializeOnLoadMethodAttributes (78ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -117,8 +117,8 @@ Domain Reload Profiling: 648ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.718 seconds
-Refreshing native plugins compatible for Editor in 6.47 ms, found 4 plugins.
+- Loaded All Assemblies, in  1.090 seconds
+Refreshing native plugins compatible for Editor in 8.64 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Package Manager log level set to [2]
@@ -126,47 +126,47 @@ Package Manager log level set to [2]
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.624 seconds
-Domain Reload Profiling: 1338ms
-	BeginReloadAssembly (184ms)
+- Finished resetting the current domain, in  1.020 seconds
+Domain Reload Profiling: 2100ms
+	BeginReloadAssembly (254ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (7ms)
+		DisableScriptedObjects (9ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (26ms)
-	RebuildCommonClasses (46ms)
-	RebuildNativeTypeToScriptingClass (14ms)
-	initialDomainReloadingComplete (47ms)
-	LoadAllAssembliesAndSetupDomain (423ms)
-		LoadAssemblies (348ms)
+		CreateAndSetChildDomain (28ms)
+	RebuildCommonClasses (49ms)
+	RebuildNativeTypeToScriptingClass (19ms)
+	initialDomainReloadingComplete (88ms)
+	LoadAllAssembliesAndSetupDomain (670ms)
+		LoadAssemblies (616ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (184ms)
-			TypeCache.Refresh (156ms)
-				TypeCache.ScanAssembly (140ms)
-			ScanForSourceGeneratedMonoScriptInfo (23ms)
-			ResolveRequiredComponents (4ms)
-	FinalizeReload (624ms)
+		AnalyzeDomain (217ms)
+			TypeCache.Refresh (185ms)
+				TypeCache.ScanAssembly (166ms)
+			ScanForSourceGeneratedMonoScriptInfo (26ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (1021ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (465ms)
+		SetupLoadedEditorAssemblies (750ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (10ms)
-			SetLoadedEditorAssemblies (4ms)
+			InitializePlatformSupportModulesInManaged (15ms)
+			SetLoadedEditorAssemblies (6ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (82ms)
-			ProcessInitializeOnLoadAttributes (326ms)
-			ProcessInitializeOnLoadMethodAttributes (34ms)
-			AfterProcessingInitializeOnLoad (9ms)
+			BeforeProcessingInitializeOnLoad (137ms)
+			ProcessInitializeOnLoadAttributes (495ms)
+			ProcessInitializeOnLoadMethodAttributes (75ms)
+			AfterProcessingInitializeOnLoad (22ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (6ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 5.84 ms, found 4 plugins.
+		AwakeInstancesAfterBackupRestoration (25ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 14.63 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 4019 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 69 unused Assets / (244.9 KB). Loaded Objects now: 4476.
-Memory consumption went from 140.6 MB to 140.4 MB.
-Total: 3.781700 ms (FindLiveObjects: 0.408800 ms CreateObjectMapping: 0.121000 ms MarkObjects: 2.996200 ms  DeleteObjects: 0.254100 ms)
+Unloading 69 unused Assets / (244.8 KB). Loaded Objects now: 4476.
+Memory consumption went from 140.8 MB to 140.6 MB.
+Total: 4.959000 ms (FindLiveObjects: 0.444800 ms CreateObjectMapping: 0.199500 ms MarkObjects: 3.996700 ms  DeleteObjects: 0.316100 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -180,13 +180,637 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
+Received Import Request.
+  Time since last request: 9642.301161 seconds.
+  path: Assets/Buttons/Simple Buttons/Buttons Style 1 (Rounded Purple)/ButtonsStyle1_11.png
+  artifactKey: Guid(20b2b10a1d8a3a948a3f0ee8aa9b0f66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Buttons/Simple Buttons/Buttons Style 1 (Rounded Purple)/ButtonsStyle1_11.png using Guid(20b2b10a1d8a3a948a3f0ee8aa9b0f66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd87bbd7e001f855b1438ce37caac8910') in 0.171079 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Buttons/Simple Buttons/Buttons Style 1 (Rounded Purple)/ButtonsStyle1_25.png
+  artifactKey: Guid(f2e34a0be5da1364b8ea73d383dee4d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Buttons/Simple Buttons/Buttons Style 1 (Rounded Purple)/ButtonsStyle1_25.png using Guid(f2e34a0be5da1364b8ea73d383dee4d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2b00e16754ebdd85c3113880bff23f8') in 0.036148 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Buttons/Simple Buttons/Buttons Style 1 (Rounded Purple)/ButtonsStyle1_04.png
+  artifactKey: Guid(8963a9425e952d240b5ff86c34cebc65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Buttons/Simple Buttons/Buttons Style 1 (Rounded Purple)/ButtonsStyle1_04.png using Guid(8963a9425e952d240b5ff86c34cebc65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '434fb11d594b204baeebc9b1664aa13d') in 0.036267 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Buttons/Simple Buttons/Buttons Style 1 (Rounded Purple)/ButtonsStyle1_17.png
+  artifactKey: Guid(0b6ee167d60e08d41808b5efd5517964) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Buttons/Simple Buttons/Buttons Style 1 (Rounded Purple)/ButtonsStyle1_17.png using Guid(0b6ee167d60e08d41808b5efd5517964) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea3f1333ca610e9b250bcf5cc814e904') in 0.038324 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Buttons/Simple Buttons/Buttons Style 1 (Rounded Purple)/ButtonsStyle1_07.png
+  artifactKey: Guid(ffa70af4cf7cbed45abd22050f3d4a0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Buttons/Simple Buttons/Buttons Style 1 (Rounded Purple)/ButtonsStyle1_07.png using Guid(ffa70af4cf7cbed45abd22050f3d4a0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41e8fbbbab8e7b7b1736a0b2fb83e5f5') in 0.032643 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Buttons/Simple Buttons/Buttons Style 1 (Rounded Purple)/ButtonsStyle1_13.png
+  artifactKey: Guid(d8db4a8b7af7f9c4aabebd731eab9ab4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Buttons/Simple Buttons/Buttons Style 1 (Rounded Purple)/ButtonsStyle1_13.png using Guid(d8db4a8b7af7f9c4aabebd731eab9ab4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b67a1ddc9a605638e4d5f79122b77fe') in 0.038629 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Buttons/Simple Buttons/Buttons Style 1 (Rounded Purple)/ButtonsStyle1_03.png
+  artifactKey: Guid(962d7198201944448a51b2b57b954427) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Buttons/Simple Buttons/Buttons Style 1 (Rounded Purple)/ButtonsStyle1_03.png using Guid(962d7198201944448a51b2b57b954427) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2711edd59f9112b6d9b9b3719c8df4f2') in 0.040261 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Buttons/Simple Buttons/Buttons Style 1 (Rounded Purple)/ButtonsStyle1_15.png
+  artifactKey: Guid(76b6ff8439f0a8140aa4a30455833466) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Buttons/Simple Buttons/Buttons Style 1 (Rounded Purple)/ButtonsStyle1_15.png using Guid(76b6ff8439f0a8140aa4a30455833466) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abbba8723810ace24cf400b33a5dbd0d') in 0.034795 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Buttons/Simple Buttons/Buttons Style 1 (Rounded Purple)/ButtonsStyle1_10.png
+  artifactKey: Guid(1bad93de348aadf47a364526288f50e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Buttons/Simple Buttons/Buttons Style 1 (Rounded Purple)/ButtonsStyle1_10.png using Guid(1bad93de348aadf47a364526288f50e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48a9379067dd6ca97843224f7e1418b9') in 0.040051 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Buttons/Simple Buttons/Buttons Style 1 (Rounded Purple)/ButtonsStyle1_22.png
+  artifactKey: Guid(e6dfeec9339e2a54795e2f555415460a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Buttons/Simple Buttons/Buttons Style 1 (Rounded Purple)/ButtonsStyle1_22.png using Guid(e6dfeec9339e2a54795e2f555415460a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef90fe9b7c64e4317d00152dc7602858') in 0.032123 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/Buttons/Simple Buttons
+  artifactKey: Guid(38b6683df0d7cb44c86367686b666bf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Buttons/Simple Buttons using Guid(38b6683df0d7cb44c86367686b666bf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd6ec3f8f16a3161e516505a4c161762') in 0.000953 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000151 seconds.
+  path: Assets/Buttons/Simple Buttons/Buttons Style 1 (Rounded Purple)/ButtonsStyle1_02.png
+  artifactKey: Guid(96261ca01db529b41ac958d274e5972d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Buttons/Simple Buttons/Buttons Style 1 (Rounded Purple)/ButtonsStyle1_02.png using Guid(96261ca01db529b41ac958d274e5972d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b127c458a30cc62a627eb7fff515ea7a') in 0.038248 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000114 seconds.
+  path: Assets/Buttons/Simple Buttons/Buttons Style 1 (Rounded Purple)/ButtonsStyle1_18.png
+  artifactKey: Guid(fbc2e6b17773c9f4c93e7deff4b6a98a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Buttons/Simple Buttons/Buttons Style 1 (Rounded Purple)/ButtonsStyle1_18.png using Guid(fbc2e6b17773c9f4c93e7deff4b6a98a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53f15180331a2230d4b3f23a354c5d70') in 0.034806 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Buttons/Simple Buttons/Buttons Style 1 (Rounded Purple)/ButtonsStyle1_12.png
+  artifactKey: Guid(fb7a7b182ba03914b8475aead9ce3270) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Buttons/Simple Buttons/Buttons Style 1 (Rounded Purple)/ButtonsStyle1_12.png using Guid(fb7a7b182ba03914b8475aead9ce3270) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2882de359fd02276c186600a964ea0fd') in 0.045154 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 5.250305 seconds.
+  path: Assets/Buttons/Simple Buttons/Buttons Style 7 (Rounded Turquoise)/ButtonsStyle7_03.png
+  artifactKey: Guid(a04fc940f6def6e4389f3ab430e877e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Buttons/Simple Buttons/Buttons Style 7 (Rounded Turquoise)/ButtonsStyle7_03.png using Guid(a04fc940f6def6e4389f3ab430e877e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8421627d3604cb51b8b13f99b8aefc63') in 0.042154 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Buttons/Simple Buttons/Buttons Style 7 (Rounded Turquoise)/ButtonsStyle7_13.png
+  artifactKey: Guid(1b67b8c30bd6e874994559564972026f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Buttons/Simple Buttons/Buttons Style 7 (Rounded Turquoise)/ButtonsStyle7_13.png using Guid(1b67b8c30bd6e874994559564972026f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40bc8a9077aa5626e0a8d61cebce2790') in 0.039294 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Buttons/Simple Buttons/Buttons Style 7 (Rounded Turquoise)/ButtonsStyle7_14.png
+  artifactKey: Guid(3c5b31ec88bc8d1419fae030f328188e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Buttons/Simple Buttons/Buttons Style 7 (Rounded Turquoise)/ButtonsStyle7_14.png using Guid(3c5b31ec88bc8d1419fae030f328188e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c099c9ae5ac6b5911b4624a9544b4ff') in 0.034443 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Buttons/Simple Buttons/Buttons Style 7 (Rounded Turquoise)/ButtonsStyle7_06.png
+  artifactKey: Guid(5e38d60ca2617564e86046a006675b0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Buttons/Simple Buttons/Buttons Style 7 (Rounded Turquoise)/ButtonsStyle7_06.png using Guid(5e38d60ca2617564e86046a006675b0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'feb3817e07266956875ea6dba7fd590e') in 0.038494 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/Buttons/Simple Buttons/Buttons Style 7 (Rounded Turquoise)/ButtonsStyle7_23.png
+  artifactKey: Guid(91a88ecc241eb51448d473571af80838) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Buttons/Simple Buttons/Buttons Style 7 (Rounded Turquoise)/ButtonsStyle7_23.png using Guid(91a88ecc241eb51448d473571af80838) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6dcb22566ff79e4e90608ac9226edb3') in 0.035782 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Buttons/Simple Buttons/Buttons Style 7 (Rounded Turquoise)/ButtonsStyle7_21.png
+  artifactKey: Guid(e0d188b59c2b4ea4bb132d57d5a0f3a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Buttons/Simple Buttons/Buttons Style 7 (Rounded Turquoise)/ButtonsStyle7_21.png using Guid(e0d188b59c2b4ea4bb132d57d5a0f3a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '817215a5fca66bc1dc38828be4f4619c') in 0.033019 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Buttons/Simple Buttons/Buttons Style 7 (Rounded Turquoise)/ButtonsStyle7_18.png
+  artifactKey: Guid(0954db441575e394abc9d3ea5e8a7cbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Buttons/Simple Buttons/Buttons Style 7 (Rounded Turquoise)/ButtonsStyle7_18.png using Guid(0954db441575e394abc9d3ea5e8a7cbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf12c4173dfc8b98a7e00ab6bf8ffaa3') in 0.033187 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Buttons/Simple Buttons/Buttons Style 7 (Rounded Turquoise)/ButtonsStyle7_22.png
+  artifactKey: Guid(2f8394ec27a374d42817fcfccf55ce87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Buttons/Simple Buttons/Buttons Style 7 (Rounded Turquoise)/ButtonsStyle7_22.png using Guid(2f8394ec27a374d42817fcfccf55ce87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5ba00c567707df253cada862a6ac8fe') in 0.036186 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Buttons/Simple Buttons/Buttons Style 7 (Rounded Turquoise)/ButtonsStyle7_09.png
+  artifactKey: Guid(fe83e9061da91c74ca46f4fe7bb7b621) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Buttons/Simple Buttons/Buttons Style 7 (Rounded Turquoise)/ButtonsStyle7_09.png using Guid(fe83e9061da91c74ca46f4fe7bb7b621) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf3f0d05fe2c73f2432db8040665b296') in 0.036932 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Buttons/Simple Buttons/Buttons Style 7 (Rounded Turquoise)/ButtonsStyle7_15.png
+  artifactKey: Guid(791223dcc80ca484ba499a67c226ea43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Buttons/Simple Buttons/Buttons Style 7 (Rounded Turquoise)/ButtonsStyle7_15.png using Guid(791223dcc80ca484ba499a67c226ea43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7e9a7a381227e39aea5e56124bcaf90') in 0.041719 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 2.135652 seconds.
+  path: Assets/Buttons/Simple Buttons/Buttons Style 12 (Square Blue)/ButtonsStyle12_03.png
+  artifactKey: Guid(3ad0ca426d0c71a4ba5c03d33bfc0f4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Buttons/Simple Buttons/Buttons Style 12 (Square Blue)/ButtonsStyle12_03.png using Guid(3ad0ca426d0c71a4ba5c03d33bfc0f4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f8cc55b3a3ab988bfd36f6fa5e2c7fa') in 0.038133 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Buttons/Simple Buttons/Buttons Style 12 (Square Blue)/ButtonsStyle12_05.png
+  artifactKey: Guid(014f99505f66c694bbb77c29acb89ebb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Buttons/Simple Buttons/Buttons Style 12 (Square Blue)/ButtonsStyle12_05.png using Guid(014f99505f66c694bbb77c29acb89ebb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '580da59270bcf84fa3c28174881b67d8') in 0.037117 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000173 seconds.
+  path: Assets/Buttons/Simple Buttons/Buttons Style 12 (Square Blue)/ButtonsStyle12_06.png
+  artifactKey: Guid(e4d9adb9905bdb94c92cddd78ddf19b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Buttons/Simple Buttons/Buttons Style 12 (Square Blue)/ButtonsStyle12_06.png using Guid(e4d9adb9905bdb94c92cddd78ddf19b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '409cb43d969a89972aa7e5543244746b') in 0.036274 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Buttons/Simple Buttons/Buttons Style 12 (Square Blue)/ButtonsStyle12_16.png
+  artifactKey: Guid(ebe7ff650776b1f49b94635377cc5f08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Buttons/Simple Buttons/Buttons Style 12 (Square Blue)/ButtonsStyle12_16.png using Guid(ebe7ff650776b1f49b94635377cc5f08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df9e621855d84f6b4a485da9ebbced6c') in 0.037243 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Buttons/Simple Buttons/Buttons Style 12 (Square Blue)/ButtonsStyle12_26.png
+  artifactKey: Guid(0dbefe0955fe0cf40bcb72a74b624833) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Buttons/Simple Buttons/Buttons Style 12 (Square Blue)/ButtonsStyle12_26.png using Guid(0dbefe0955fe0cf40bcb72a74b624833) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b32f5206430291a1eb586b7608861c4') in 0.035171 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Buttons/Simple Buttons/Buttons Style 12 (Square Blue)/ButtonsStyle12_12.png
+  artifactKey: Guid(40bae0e0e11b04c44be80f0ac467d25e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Buttons/Simple Buttons/Buttons Style 12 (Square Blue)/ButtonsStyle12_12.png using Guid(40bae0e0e11b04c44be80f0ac467d25e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27f7bcfaf0340f398f29b3e973e7db69') in 0.036704 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Buttons/Simple Buttons/Buttons Style 12 (Square Blue)/ButtonsStyle12_09.png
+  artifactKey: Guid(f85ad493e19e3f142a1b535f9ae5f920) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Buttons/Simple Buttons/Buttons Style 12 (Square Blue)/ButtonsStyle12_09.png using Guid(f85ad493e19e3f142a1b535f9ae5f920) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95ccfdcd8808653ea55f3f6244846303') in 0.035452 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Buttons/Simple Buttons/Buttons Style 12 (Square Blue)/ButtonsStyle12_10.png
+  artifactKey: Guid(c2c794b1feef55e4896dbdbdc6d7372f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Buttons/Simple Buttons/Buttons Style 12 (Square Blue)/ButtonsStyle12_10.png using Guid(c2c794b1feef55e4896dbdbdc6d7372f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd79ea3dc21fb2ad531adcba9e4b3d9a3') in 0.032982 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Buttons/Simple Buttons/Buttons Style 12 (Square Blue)/ButtonsStyle12_13.png
+  artifactKey: Guid(d0fb54b12d56f2a46ae41e8348d57321) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Buttons/Simple Buttons/Buttons Style 12 (Square Blue)/ButtonsStyle12_13.png using Guid(d0fb54b12d56f2a46ae41e8348d57321) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5205f05a9154e8b365d54bbdda42e79c') in 0.033109 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 1.945280 seconds.
+  path: Assets/Buttons/Simple Buttons/Buttons Style 11 (Rounded Blue)/ButtonsStyle11_03.png
+  artifactKey: Guid(98e5dab242c0282419f5a91853da2031) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Buttons/Simple Buttons/Buttons Style 11 (Rounded Blue)/ButtonsStyle11_03.png using Guid(98e5dab242c0282419f5a91853da2031) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a913fcb4708a9b88aa10cfaea5be3271') in 0.032603 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Buttons/Simple Buttons/Buttons Style 11 (Rounded Blue)/ButtonsStyle11_12.png
+  artifactKey: Guid(857879045b07a2d49a712cfe98e8acd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Buttons/Simple Buttons/Buttons Style 11 (Rounded Blue)/ButtonsStyle11_12.png using Guid(857879045b07a2d49a712cfe98e8acd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb542482e05c0cb07eb556e930112e89') in 0.030962 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Buttons/Simple Buttons/Buttons Style 11 (Rounded Blue)/ButtonsStyle11_13.png
+  artifactKey: Guid(91e84bf3e4a71b345bbfe58739a76e87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Buttons/Simple Buttons/Buttons Style 11 (Rounded Blue)/ButtonsStyle11_13.png using Guid(91e84bf3e4a71b345bbfe58739a76e87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24754f5392cb2ad2185a0a5c30274374') in 0.032146 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Buttons/Simple Buttons/Buttons Style 11 (Rounded Blue)/ButtonsStyle11_05.png
+  artifactKey: Guid(6ecba54eab264e740b041d1c40d7a385) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Buttons/Simple Buttons/Buttons Style 11 (Rounded Blue)/ButtonsStyle11_05.png using Guid(6ecba54eab264e740b041d1c40d7a385) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0555d4139c2d477621d5e1828dd1e9bd') in 0.032740 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Buttons/Simple Buttons/Buttons Style 11 (Rounded Blue)/ButtonsStyle11_22.png
+  artifactKey: Guid(a3160d57d3e47b946922da45f40df875) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Buttons/Simple Buttons/Buttons Style 11 (Rounded Blue)/ButtonsStyle11_22.png using Guid(a3160d57d3e47b946922da45f40df875) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98abd08dd7f4ae2d769af1e3a9f8d4db') in 0.035488 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Buttons/Simple Buttons/Buttons Style 11 (Rounded Blue)/ButtonsStyle11_23.png
+  artifactKey: Guid(525d9a94defe8124482ceec587315a66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Buttons/Simple Buttons/Buttons Style 11 (Rounded Blue)/ButtonsStyle11_23.png using Guid(525d9a94defe8124482ceec587315a66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57b0e53c0f27128c3350fd6b20c32dba') in 0.035698 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Buttons/Simple Buttons/Buttons Style 11 (Rounded Blue)/ButtonsStyle11_09.png
+  artifactKey: Guid(c7505d4461bb1cb4092b2e6a21e96c77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Buttons/Simple Buttons/Buttons Style 11 (Rounded Blue)/ButtonsStyle11_09.png using Guid(c7505d4461bb1cb4092b2e6a21e96c77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3197e20443ec32a073362a1e15c693c') in 0.031872 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Buttons/Simple Buttons/Buttons Style 11 (Rounded Blue)/ButtonsStyle11_25.png
+  artifactKey: Guid(6c8494b11b1fed147ba9fa3e000aaa3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Buttons/Simple Buttons/Buttons Style 11 (Rounded Blue)/ButtonsStyle11_25.png using Guid(6c8494b11b1fed147ba9fa3e000aaa3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1e7fdd2cd2850b9c75dcee573d03dd3') in 0.032005 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Buttons/Simple Buttons/Buttons Style 11 (Rounded Blue)/ButtonsStyle11_16.png
+  artifactKey: Guid(2a4c98deea202ca42835732d1607a499) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Buttons/Simple Buttons/Buttons Style 11 (Rounded Blue)/ButtonsStyle11_16.png using Guid(2a4c98deea202ca42835732d1607a499) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3854a1f0f892d61bfd7b35f87c91b7a6') in 0.033563 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 1.368880 seconds.
+  path: Assets/Buttons/Simple Buttons/Buttons Style 13 (Rounded Gray)/ButtonsStyle13_03.png
+  artifactKey: Guid(06651342c38834e4e9db2134d566a069) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Buttons/Simple Buttons/Buttons Style 13 (Rounded Gray)/ButtonsStyle13_03.png using Guid(06651342c38834e4e9db2134d566a069) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a756faddf3a5216cdb63af7bcc2b9968') in 0.042131 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Buttons/Simple Buttons/Buttons Style 13 (Rounded Gray)/ButtonsStyle13_07.png
+  artifactKey: Guid(ecbfe3128aa0b76489931b170dd56a8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Buttons/Simple Buttons/Buttons Style 13 (Rounded Gray)/ButtonsStyle13_07.png using Guid(ecbfe3128aa0b76489931b170dd56a8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae66101e695439754650ff75b0329578') in 0.032732 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Buttons/Simple Buttons/Buttons Style 13 (Rounded Gray)/ButtonsStyle13_09.png
+  artifactKey: Guid(902bfc577b6e85e4c840ba73a0bd9509) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Buttons/Simple Buttons/Buttons Style 13 (Rounded Gray)/ButtonsStyle13_09.png using Guid(902bfc577b6e85e4c840ba73a0bd9509) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4a74584d73f99357794c49245ccb244') in 0.032331 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Buttons/Simple Buttons/Buttons Style 13 (Rounded Gray)/ButtonsStyle13_19.png
+  artifactKey: Guid(cad9d120e1a74e24e8ae73cbb84b7bd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Buttons/Simple Buttons/Buttons Style 13 (Rounded Gray)/ButtonsStyle13_19.png using Guid(cad9d120e1a74e24e8ae73cbb84b7bd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '033a697f4b6c627c9779360fd2b0d7b6') in 0.032149 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Buttons/Simple Buttons/Buttons Style 13 (Rounded Gray)/ButtonsStyle13_22.png
+  artifactKey: Guid(588c4b10e0598074da85f7011d324573) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Buttons/Simple Buttons/Buttons Style 13 (Rounded Gray)/ButtonsStyle13_22.png using Guid(588c4b10e0598074da85f7011d324573) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f60f82727fb1a2efb964965588c4dc7b') in 0.035367 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Buttons/Simple Buttons/Buttons Style 13 (Rounded Gray)/ButtonsStyle13_13.png
+  artifactKey: Guid(f600ea16578248d4ea3dabcfb65ac55f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Buttons/Simple Buttons/Buttons Style 13 (Rounded Gray)/ButtonsStyle13_13.png using Guid(f600ea16578248d4ea3dabcfb65ac55f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e773269a4302cf236ee99b46847e0dc0') in 0.036152 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Buttons/Simple Buttons/Buttons Style 13 (Rounded Gray)/ButtonsStyle13_24.png
+  artifactKey: Guid(305d32daf9f44794d8a18b5775b63e01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Buttons/Simple Buttons/Buttons Style 13 (Rounded Gray)/ButtonsStyle13_24.png using Guid(305d32daf9f44794d8a18b5775b63e01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7baa687a6172065e59fb6087268f7da5') in 0.030928 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Buttons/Simple Buttons/Buttons Style 13 (Rounded Gray)/ButtonsStyle13_15.png
+  artifactKey: Guid(c67be3a05d582c34199663cf1073536e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Buttons/Simple Buttons/Buttons Style 13 (Rounded Gray)/ButtonsStyle13_15.png using Guid(c67be3a05d582c34199663cf1073536e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8d843de061e34d1679407f48432543b') in 0.030185 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Buttons/Simple Buttons/Buttons Style 13 (Rounded Gray)/ButtonsStyle13_05.png
+  artifactKey: Guid(e0c950c002fffa14fa7276e27510ea97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Buttons/Simple Buttons/Buttons Style 13 (Rounded Gray)/ButtonsStyle13_05.png using Guid(e0c950c002fffa14fa7276e27510ea97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be61c19c6fcd02035a5578d5bec2bffa') in 0.033809 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 3.210515 seconds.
+  path: Assets/Buttons/Simple Buttons/Buttons Style 5 (Rounded Green)/ButtonsStyle5_03.png
+  artifactKey: Guid(ffc881576432a154fb549d752d7348db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Buttons/Simple Buttons/Buttons Style 5 (Rounded Green)/ButtonsStyle5_03.png using Guid(ffc881576432a154fb549d752d7348db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f779751a738c0808701f50f8fbf65542') in 0.025701 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Buttons/Simple Buttons/Buttons Style 5 (Rounded Green)/ButtonsStyle5_23.png
+  artifactKey: Guid(5840efc7c24837e4ba77574e8d1e10ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Buttons/Simple Buttons/Buttons Style 5 (Rounded Green)/ButtonsStyle5_23.png using Guid(5840efc7c24837e4ba77574e8d1e10ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78aedf0c32951aae4ff093eb5f4d439f') in 0.028404 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Buttons/Simple Buttons/Buttons Style 5 (Rounded Green)/ButtonsStyle5_15.png
+  artifactKey: Guid(c5b2a80aaa37e5e4385e72af1febc929) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Buttons/Simple Buttons/Buttons Style 5 (Rounded Green)/ButtonsStyle5_15.png using Guid(c5b2a80aaa37e5e4385e72af1febc929) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6dea7f29e5440dc330a63a09436fc9c') in 0.029946 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Buttons/Simple Buttons/Buttons Style 5 (Rounded Green)/ButtonsStyle5_24.png
+  artifactKey: Guid(32302e34dd59f524d89f13356091ce79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Buttons/Simple Buttons/Buttons Style 5 (Rounded Green)/ButtonsStyle5_24.png using Guid(32302e34dd59f524d89f13356091ce79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9447b35ea45d5aefa80e826e9d7e6878') in 0.030016 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Buttons/Simple Buttons/Buttons Style 5 (Rounded Green)/ButtonsStyle5_25.png
+  artifactKey: Guid(17401c65dcf4ce1438e8e21e58d9f775) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Buttons/Simple Buttons/Buttons Style 5 (Rounded Green)/ButtonsStyle5_25.png using Guid(17401c65dcf4ce1438e8e21e58d9f775) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69d95b061316ed44d6a23b06072a2386') in 0.027919 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Buttons/Simple Buttons/Buttons Style 5 (Rounded Green)/ButtonsStyle5_16.png
+  artifactKey: Guid(5e93dc3a25307f74691b54d78c0c830f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Buttons/Simple Buttons/Buttons Style 5 (Rounded Green)/ButtonsStyle5_16.png using Guid(5e93dc3a25307f74691b54d78c0c830f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9bc139262f88f4d0fbd34305c614c60') in 0.030198 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Buttons/Simple Buttons/Buttons Style 5 (Rounded Green)/ButtonsStyle5_09.png
+  artifactKey: Guid(f00d09dfdf912aa4eb8a1a1b4ce6feef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Buttons/Simple Buttons/Buttons Style 5 (Rounded Green)/ButtonsStyle5_09.png using Guid(f00d09dfdf912aa4eb8a1a1b4ce6feef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb6a96796b2b5d08194abdabec74a904') in 0.028692 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Buttons/Simple Buttons/Buttons Style 5 (Rounded Green)/ButtonsStyle5_20.png
+  artifactKey: Guid(d0eb71ae8fd40e54b8d38a2b125f37fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Buttons/Simple Buttons/Buttons Style 5 (Rounded Green)/ButtonsStyle5_20.png using Guid(d0eb71ae8fd40e54b8d38a2b125f37fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e83ac92b4a485b2e28fbb8ffcb09d510') in 0.029673 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Buttons/Simple Buttons/Buttons Style 5 (Rounded Green)/ButtonsStyle5_18.png
+  artifactKey: Guid(0413b9cc717287548979b28d5ba9969c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Buttons/Simple Buttons/Buttons Style 5 (Rounded Green)/ButtonsStyle5_18.png using Guid(0413b9cc717287548979b28d5ba9969c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '178fc050053e40c95bb5f70a89a5ba95') in 0.030625 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 1.257224 seconds.
+  path: Assets/Buttons/Simple Buttons/Buttons Style 3 (Rounded Pink)/ButtonsStyle3_03.png
+  artifactKey: Guid(c04deaf7361a6c54297a65ee9c203992) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Buttons/Simple Buttons/Buttons Style 3 (Rounded Pink)/ButtonsStyle3_03.png using Guid(c04deaf7361a6c54297a65ee9c203992) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a76814b1124b6b2b51430e35669cef7') in 0.034057 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Buttons/Simple Buttons/Buttons Style 3 (Rounded Pink)/ButtonsStyle3_22.png
+  artifactKey: Guid(43b5e4becd8884047acee0e150d8dcd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Buttons/Simple Buttons/Buttons Style 3 (Rounded Pink)/ButtonsStyle3_22.png using Guid(43b5e4becd8884047acee0e150d8dcd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74dbdc1e958ad4829fc5c312803fba65') in 0.035455 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Buttons/Simple Buttons/Buttons Style 3 (Rounded Pink)/ButtonsStyle3_16.png
+  artifactKey: Guid(a512961a75d2fec4aa75c6df4fa35dd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Buttons/Simple Buttons/Buttons Style 3 (Rounded Pink)/ButtonsStyle3_16.png using Guid(a512961a75d2fec4aa75c6df4fa35dd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db0f57b3832dd8f108900c75986b5ab9') in 0.034865 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Buttons/Simple Buttons/Buttons Style 3 (Rounded Pink)/ButtonsStyle3_21.png
+  artifactKey: Guid(a730a75e325287748a0babfcac0941ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Buttons/Simple Buttons/Buttons Style 3 (Rounded Pink)/ButtonsStyle3_21.png using Guid(a730a75e325287748a0babfcac0941ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbd1dd6792d107940a27d9b968138bdb') in 0.038281 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Buttons/Simple Buttons/Buttons Style 3 (Rounded Pink)/ButtonsStyle3_18.png
+  artifactKey: Guid(69127940d857e764e995eb115dc8f10a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Buttons/Simple Buttons/Buttons Style 3 (Rounded Pink)/ButtonsStyle3_18.png using Guid(69127940d857e764e995eb115dc8f10a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1971f99ed902f5266635402eb065566') in 0.037816 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Buttons/Simple Buttons/Buttons Style 3 (Rounded Pink)/ButtonsStyle3_13.png
+  artifactKey: Guid(203b915a71ebac241ad9689ec414f482) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Buttons/Simple Buttons/Buttons Style 3 (Rounded Pink)/ButtonsStyle3_13.png using Guid(203b915a71ebac241ad9689ec414f482) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73dbc30fc8113b2e8e9dc766b4a0b91f') in 0.034785 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Buttons/Simple Buttons/Buttons Style 3 (Rounded Pink)/ButtonsStyle3_26.png
+  artifactKey: Guid(b4d6d0e23371ff84293c3dc01ddf9856) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Buttons/Simple Buttons/Buttons Style 3 (Rounded Pink)/ButtonsStyle3_26.png using Guid(b4d6d0e23371ff84293c3dc01ddf9856) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9bac480deb4b3ffb4b8f9faf63d4e6c') in 0.037085 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Buttons/Simple Buttons/Buttons Style 3 (Rounded Pink)/ButtonsStyle3_10.png
+  artifactKey: Guid(e59da62836b29d848a90a21a652a6417) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Buttons/Simple Buttons/Buttons Style 3 (Rounded Pink)/ButtonsStyle3_10.png using Guid(e59da62836b29d848a90a21a652a6417) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6197f7b5ac90b6cd2d64363806cf39cb') in 0.046151 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Buttons/Simple Buttons/Buttons Style 3 (Rounded Pink)/ButtonsStyle3_05.png
+  artifactKey: Guid(a4a66d5385fa0e94cb470ad21e57ba05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Buttons/Simple Buttons/Buttons Style 3 (Rounded Pink)/ButtonsStyle3_05.png using Guid(a4a66d5385fa0e94cb470ad21e57ba05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76ad8f7d0ef8eee664a4bd230e5e5bf7') in 0.038572 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 1.629624 seconds.
+  path: Assets/Buttons/Simple Buttons/Buttons Style 4 (Square Pink)/ButtonsStyle4_03.png
+  artifactKey: Guid(a1de3d7ea33b23045a8b0487fc6e9f4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Buttons/Simple Buttons/Buttons Style 4 (Square Pink)/ButtonsStyle4_03.png using Guid(a1de3d7ea33b23045a8b0487fc6e9f4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1268edfa79930dc388e37ed264883d8c') in 0.039104 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Buttons/Simple Buttons/Buttons Style 4 (Square Pink)/ButtonsStyle4_15.png
+  artifactKey: Guid(5289e686015fa0140a159eedec2d1590) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Buttons/Simple Buttons/Buttons Style 4 (Square Pink)/ButtonsStyle4_15.png using Guid(5289e686015fa0140a159eedec2d1590) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03e449c810b69ae8be710259d41b1bd9') in 0.043033 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Buttons/Simple Buttons/Buttons Style 4 (Square Pink)/ButtonsStyle4_10.png
+  artifactKey: Guid(060c42d8eb4509e4bb93160c67bcb221) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Buttons/Simple Buttons/Buttons Style 4 (Square Pink)/ButtonsStyle4_10.png using Guid(060c42d8eb4509e4bb93160c67bcb221) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2f18b308a8691728d4050f5907af9b5') in 0.028862 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Buttons/Simple Buttons/Buttons Style 4 (Square Pink)/ButtonsStyle4_12.png
+  artifactKey: Guid(25b62305c38b8cc4fb02b7f76ed7326b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Buttons/Simple Buttons/Buttons Style 4 (Square Pink)/ButtonsStyle4_12.png using Guid(25b62305c38b8cc4fb02b7f76ed7326b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3ff45a96cd9096a16b03c296ffc6568') in 0.030582 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Buttons/Simple Buttons/Buttons Style 4 (Square Pink)/ButtonsStyle4_14.png
+  artifactKey: Guid(a0c018af355012b419a4ec40f31c8047) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Buttons/Simple Buttons/Buttons Style 4 (Square Pink)/ButtonsStyle4_14.png using Guid(a0c018af355012b419a4ec40f31c8047) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5ffc7b76a922f21e1404756c5212773') in 0.034874 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Buttons/Simple Buttons/Buttons Style 4 (Square Pink)/ButtonsStyle4_11.png
+  artifactKey: Guid(200f4c1fca449fd49a443ec3391f40b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Buttons/Simple Buttons/Buttons Style 4 (Square Pink)/ButtonsStyle4_11.png using Guid(200f4c1fca449fd49a443ec3391f40b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70fa9f9cc780c486d04bdc8d581b78a7') in 0.032056 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Buttons/Simple Buttons/Buttons Style 4 (Square Pink)/ButtonsStyle4_07.png
+  artifactKey: Guid(84febbaf9a199794c8a782053ae2bf3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Buttons/Simple Buttons/Buttons Style 4 (Square Pink)/ButtonsStyle4_07.png using Guid(84febbaf9a199794c8a782053ae2bf3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb72332ae19aa709ecaf23e79d07f764') in 0.033948 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Buttons/Simple Buttons/Buttons Style 4 (Square Pink)/ButtonsStyle4_06.png
+  artifactKey: Guid(1243d881850a04b46b5b3273c75d44f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Buttons/Simple Buttons/Buttons Style 4 (Square Pink)/ButtonsStyle4_06.png using Guid(1243d881850a04b46b5b3273c75d44f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fbaeadf12237772492d54121a49508cd') in 0.039041 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Buttons/Simple Buttons/Buttons Style 4 (Square Pink)/ButtonsStyle4_24.png
+  artifactKey: Guid(15e32fd9f474c0944ad1a3a805acf80d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Buttons/Simple Buttons/Buttons Style 4 (Square Pink)/ButtonsStyle4_24.png using Guid(15e32fd9f474c0944ad1a3a805acf80d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e7677a8af5c74f2280f1a0e98b8b943') in 0.038742 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
 Received Prepare
-Refreshing native plugins compatible for Editor in 4.89 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 11.06 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 7 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 7 unused Assets / (199.0 KB). Loaded Objects now: 4476.
-Memory consumption went from 75.0 MB to 74.8 MB.
-Total: 3.467900 ms (FindLiveObjects: 0.405000 ms CreateObjectMapping: 0.130500 ms MarkObjects: 2.751400 ms  DeleteObjects: 0.179900 ms)
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7 unused Assets / (196.4 KB). Loaded Objects now: 4511.
+Memory consumption went from 79.5 MB to 79.3 MB.
+Total: 5.687000 ms (FindLiveObjects: 0.460700 ms CreateObjectMapping: 0.188400 ms MarkObjects: 4.877200 ms  DeleteObjects: 0.159500 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -203,860 +827,23 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.481 seconds
-Refreshing native plugins compatible for Editor in 5.78 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.002 seconds
-Domain Reload Profiling: 1477ms
-	BeginReloadAssembly (156ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (11ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (34ms)
-	RebuildCommonClasses (32ms)
-	RebuildNativeTypeToScriptingClass (11ms)
-	initialDomainReloadingComplete (32ms)
-	LoadAllAssembliesAndSetupDomain (243ms)
-		LoadAssemblies (301ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (23ms)
-			TypeCache.Refresh (8ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (9ms)
-			ResolveRequiredComponents (5ms)
-	FinalizeReload (1003ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (386ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (10ms)
-			SetLoadedEditorAssemblies (3ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (78ms)
-			ProcessInitializeOnLoadAttributes (258ms)
-			ProcessInitializeOnLoadMethodAttributes (28ms)
-			AfterProcessingInitializeOnLoad (10ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (12ms)
-Refreshing native plugins compatible for Editor in 4.87 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4001 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 41 unused Assets / (217.3 KB). Loaded Objects now: 4481.
-Memory consumption went from 136.2 MB to 136.0 MB.
-Total: 3.539200 ms (FindLiveObjects: 0.407600 ms CreateObjectMapping: 0.131700 ms MarkObjects: 2.784300 ms  DeleteObjects: 0.214100 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+Received Import Request.
+  Time since last request: 2198.704361 seconds.
+  path: Assets/Buttons/Puzzle stage & settings GUI Pack/Image_pink/+.png
+  artifactKey: Guid(ed98146e191ebea478de2e678fc43516) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Buttons/Puzzle stage & settings GUI Pack/Image_pink/+.png using Guid(ed98146e191ebea478de2e678fc43516) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49920f2e922298f8fdd35e27d68f213c') in 0.038479 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
 ========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.496 seconds
-Refreshing native plugins compatible for Editor in 6.09 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.036 seconds
-Domain Reload Profiling: 1527ms
-	BeginReloadAssembly (163ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (10ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (33ms)
-	RebuildCommonClasses (39ms)
-	RebuildNativeTypeToScriptingClass (11ms)
-	initialDomainReloadingComplete (33ms)
-	LoadAllAssembliesAndSetupDomain (244ms)
-		LoadAssemblies (317ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (11ms)
-			TypeCache.Refresh (5ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (5ms)
-	FinalizeReload (1036ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (422ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (9ms)
-			SetLoadedEditorAssemblies (3ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (81ms)
-			ProcessInitializeOnLoadAttributes (286ms)
-			ProcessInitializeOnLoadMethodAttributes (31ms)
-			AfterProcessingInitializeOnLoad (10ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (14ms)
-Refreshing native plugins compatible for Editor in 6.44 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4001 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 41 unused Assets / (217.1 KB). Loaded Objects now: 4485.
-Memory consumption went from 136.2 MB to 136.0 MB.
-Total: 3.426300 ms (FindLiveObjects: 0.402100 ms CreateObjectMapping: 0.124300 ms MarkObjects: 2.687800 ms  DeleteObjects: 0.210900 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.481 seconds
-Refreshing native plugins compatible for Editor in 5.57 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.038 seconds
-Domain Reload Profiling: 1514ms
-	BeginReloadAssembly (171ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (10ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (37ms)
-	RebuildCommonClasses (31ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (36ms)
-	LoadAllAssembliesAndSetupDomain (226ms)
-		LoadAssemblies (303ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (12ms)
-			TypeCache.Refresh (6ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (5ms)
-	FinalizeReload (1038ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (412ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (8ms)
-			SetLoadedEditorAssemblies (3ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (78ms)
-			ProcessInitializeOnLoadAttributes (284ms)
-			ProcessInitializeOnLoadMethodAttributes (29ms)
-			AfterProcessingInitializeOnLoad (9ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (12ms)
-Refreshing native plugins compatible for Editor in 5.37 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4001 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 41 unused Assets / (217.3 KB). Loaded Objects now: 4489.
-Memory consumption went from 136.2 MB to 136.0 MB.
-Total: 3.682200 ms (FindLiveObjects: 0.433800 ms CreateObjectMapping: 0.145000 ms MarkObjects: 2.874800 ms  DeleteObjects: 0.227800 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.491 seconds
-Refreshing native plugins compatible for Editor in 4.75 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.007 seconds
-Domain Reload Profiling: 1495ms
-	BeginReloadAssembly (168ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (10ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (36ms)
-	RebuildCommonClasses (34ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (33ms)
-	LoadAllAssembliesAndSetupDomain (240ms)
-		LoadAssemblies (308ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (23ms)
-			TypeCache.Refresh (8ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (9ms)
-			ResolveRequiredComponents (5ms)
-	FinalizeReload (1008ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (419ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (9ms)
-			SetLoadedEditorAssemblies (3ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (77ms)
-			ProcessInitializeOnLoadAttributes (291ms)
-			ProcessInitializeOnLoadMethodAttributes (29ms)
-			AfterProcessingInitializeOnLoad (10ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (12ms)
-Refreshing native plugins compatible for Editor in 6.06 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4001 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 41 unused Assets / (217.0 KB). Loaded Objects now: 4493.
-Memory consumption went from 136.2 MB to 136.0 MB.
-Total: 3.387700 ms (FindLiveObjects: 0.416300 ms CreateObjectMapping: 0.117300 ms MarkObjects: 2.634700 ms  DeleteObjects: 0.218100 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.463 seconds
-Refreshing native plugins compatible for Editor in 4.71 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.036 seconds
-Domain Reload Profiling: 1492ms
-	BeginReloadAssembly (158ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (11ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (32ms)
-	RebuildCommonClasses (31ms)
-	RebuildNativeTypeToScriptingClass (11ms)
-	initialDomainReloadingComplete (32ms)
-	LoadAllAssembliesAndSetupDomain (222ms)
-		LoadAssemblies (296ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (11ms)
-			TypeCache.Refresh (5ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (5ms)
-	FinalizeReload (1036ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (433ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (8ms)
-			SetLoadedEditorAssemblies (3ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (80ms)
-			ProcessInitializeOnLoadAttributes (299ms)
-			ProcessInitializeOnLoadMethodAttributes (32ms)
-			AfterProcessingInitializeOnLoad (10ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (12ms)
-Refreshing native plugins compatible for Editor in 6.29 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4001 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 41 unused Assets / (217.0 KB). Loaded Objects now: 4497.
-Memory consumption went from 136.2 MB to 136.0 MB.
-Total: 4.241300 ms (FindLiveObjects: 0.389800 ms CreateObjectMapping: 0.119300 ms MarkObjects: 3.173000 ms  DeleteObjects: 0.558000 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.482 seconds
-Refreshing native plugins compatible for Editor in 6.30 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.039 seconds
-Domain Reload Profiling: 1517ms
-	BeginReloadAssembly (161ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (10ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (33ms)
-	RebuildCommonClasses (32ms)
-	RebuildNativeTypeToScriptingClass (11ms)
-	initialDomainReloadingComplete (35ms)
-	LoadAllAssembliesAndSetupDomain (239ms)
-		LoadAssemblies (297ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (28ms)
-			TypeCache.Refresh (9ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (11ms)
-			ResolveRequiredComponents (6ms)
-	FinalizeReload (1039ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (416ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (8ms)
-			SetLoadedEditorAssemblies (3ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (79ms)
-			ProcessInitializeOnLoadAttributes (288ms)
-			ProcessInitializeOnLoadMethodAttributes (28ms)
-			AfterProcessingInitializeOnLoad (9ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (12ms)
-Refreshing native plugins compatible for Editor in 4.95 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4001 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 41 unused Assets / (217.1 KB). Loaded Objects now: 4501.
-Memory consumption went from 136.2 MB to 136.0 MB.
-Total: 3.536500 ms (FindLiveObjects: 0.410900 ms CreateObjectMapping: 0.126900 ms MarkObjects: 2.775700 ms  DeleteObjects: 0.221800 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.510 seconds
-Refreshing native plugins compatible for Editor in 5.85 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.094 seconds
-Domain Reload Profiling: 1599ms
-	BeginReloadAssembly (171ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (11ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (35ms)
-	RebuildCommonClasses (38ms)
-	RebuildNativeTypeToScriptingClass (13ms)
-	initialDomainReloadingComplete (34ms)
-	LoadAllAssembliesAndSetupDomain (251ms)
-		LoadAssemblies (313ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (24ms)
-			TypeCache.Refresh (9ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (9ms)
-			ResolveRequiredComponents (5ms)
-	FinalizeReload (1094ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (397ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (9ms)
-			SetLoadedEditorAssemblies (3ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (76ms)
-			ProcessInitializeOnLoadAttributes (265ms)
-			ProcessInitializeOnLoadMethodAttributes (34ms)
-			AfterProcessingInitializeOnLoad (10ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (12ms)
-Refreshing native plugins compatible for Editor in 5.92 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4001 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 41 unused Assets / (217.0 KB). Loaded Objects now: 4505.
-Memory consumption went from 136.2 MB to 136.0 MB.
-Total: 3.625200 ms (FindLiveObjects: 0.420600 ms CreateObjectMapping: 0.117900 ms MarkObjects: 2.855800 ms  DeleteObjects: 0.229900 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.474 seconds
-Refreshing native plugins compatible for Editor in 5.74 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.057 seconds
-Domain Reload Profiling: 1526ms
-	BeginReloadAssembly (160ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (10ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (32ms)
-	RebuildCommonClasses (31ms)
-	RebuildNativeTypeToScriptingClass (11ms)
-	initialDomainReloadingComplete (33ms)
-	LoadAllAssembliesAndSetupDomain (234ms)
-		LoadAssemblies (307ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (15ms)
-			TypeCache.Refresh (6ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (7ms)
-	FinalizeReload (1057ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (427ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (8ms)
-			SetLoadedEditorAssemblies (3ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (82ms)
-			ProcessInitializeOnLoadAttributes (291ms)
-			ProcessInitializeOnLoadMethodAttributes (31ms)
-			AfterProcessingInitializeOnLoad (10ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (14ms)
-Refreshing native plugins compatible for Editor in 8.69 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4001 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 41 unused Assets / (217.2 KB). Loaded Objects now: 4509.
-Memory consumption went from 136.2 MB to 136.0 MB.
-Total: 3.555800 ms (FindLiveObjects: 0.381100 ms CreateObjectMapping: 0.119100 ms MarkObjects: 2.835800 ms  DeleteObjects: 0.218800 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.458 seconds
-Refreshing native plugins compatible for Editor in 5.09 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.044 seconds
-Domain Reload Profiling: 1499ms
-	BeginReloadAssembly (156ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (10ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (34ms)
-	RebuildCommonClasses (31ms)
-	RebuildNativeTypeToScriptingClass (11ms)
-	initialDomainReloadingComplete (35ms)
-	LoadAllAssembliesAndSetupDomain (220ms)
-		LoadAssemblies (289ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (12ms)
-			TypeCache.Refresh (6ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (5ms)
-	FinalizeReload (1045ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (441ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (10ms)
-			SetLoadedEditorAssemblies (3ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (93ms)
-			ProcessInitializeOnLoadAttributes (292ms)
-			ProcessInitializeOnLoadMethodAttributes (32ms)
-			AfterProcessingInitializeOnLoad (11ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (15ms)
-Refreshing native plugins compatible for Editor in 6.69 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4001 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 41 unused Assets / (217.1 KB). Loaded Objects now: 4513.
-Memory consumption went from 136.2 MB to 136.0 MB.
-Total: 3.990200 ms (FindLiveObjects: 0.383000 ms CreateObjectMapping: 0.125600 ms MarkObjects: 3.213300 ms  DeleteObjects: 0.267100 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.485 seconds
-Refreshing native plugins compatible for Editor in 6.13 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.075 seconds
-Domain Reload Profiling: 1555ms
-	BeginReloadAssembly (168ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (10ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (34ms)
-	RebuildCommonClasses (31ms)
-	RebuildNativeTypeToScriptingClass (16ms)
-	initialDomainReloadingComplete (32ms)
-	LoadAllAssembliesAndSetupDomain (233ms)
-		LoadAssemblies (313ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (12ms)
-			TypeCache.Refresh (6ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (5ms)
-	FinalizeReload (1076ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (464ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (9ms)
-			SetLoadedEditorAssemblies (3ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (94ms)
-			ProcessInitializeOnLoadAttributes (312ms)
-			ProcessInitializeOnLoadMethodAttributes (34ms)
-			AfterProcessingInitializeOnLoad (12ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (15ms)
-Refreshing native plugins compatible for Editor in 6.26 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4001 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 41 unused Assets / (217.3 KB). Loaded Objects now: 4517.
-Memory consumption went from 136.2 MB to 136.0 MB.
-Total: 3.564900 ms (FindLiveObjects: 0.380200 ms CreateObjectMapping: 0.120300 ms MarkObjects: 2.790900 ms  DeleteObjects: 0.272300 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.485 seconds
-Refreshing native plugins compatible for Editor in 5.65 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.088 seconds
-Domain Reload Profiling: 1567ms
-	BeginReloadAssembly (154ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (10ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (32ms)
-	RebuildCommonClasses (32ms)
-	RebuildNativeTypeToScriptingClass (13ms)
-	initialDomainReloadingComplete (32ms)
-	LoadAllAssembliesAndSetupDomain (248ms)
-		LoadAssemblies (317ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (12ms)
-			TypeCache.Refresh (6ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (5ms)
-	FinalizeReload (1089ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (418ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (9ms)
-			SetLoadedEditorAssemblies (3ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (81ms)
-			ProcessInitializeOnLoadAttributes (284ms)
-			ProcessInitializeOnLoadMethodAttributes (31ms)
-			AfterProcessingInitializeOnLoad (10ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (14ms)
-Refreshing native plugins compatible for Editor in 6.96 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4001 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 41 unused Assets / (217.1 KB). Loaded Objects now: 4521.
-Memory consumption went from 136.2 MB to 136.0 MB.
-Total: 4.061100 ms (FindLiveObjects: 0.437600 ms CreateObjectMapping: 0.119400 ms MarkObjects: 3.263800 ms  DeleteObjects: 0.238700 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.465 seconds
-Refreshing native plugins compatible for Editor in 6.10 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.086 seconds
-Domain Reload Profiling: 1546ms
-	BeginReloadAssembly (160ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (10ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (32ms)
-	RebuildCommonClasses (37ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (31ms)
-	LoadAllAssembliesAndSetupDomain (219ms)
-		LoadAssemblies (296ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (12ms)
-			TypeCache.Refresh (6ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (5ms)
-	FinalizeReload (1087ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (424ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (9ms)
-			SetLoadedEditorAssemblies (3ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (87ms)
-			ProcessInitializeOnLoadAttributes (286ms)
-			ProcessInitializeOnLoadMethodAttributes (30ms)
-			AfterProcessingInitializeOnLoad (9ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (14ms)
-Refreshing native plugins compatible for Editor in 5.33 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4001 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 41 unused Assets / (217.0 KB). Loaded Objects now: 4525.
-Memory consumption went from 136.3 MB to 136.0 MB.
-Total: 3.627100 ms (FindLiveObjects: 0.403700 ms CreateObjectMapping: 0.118800 ms MarkObjects: 2.862800 ms  DeleteObjects: 0.240800 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.462 seconds
-Refreshing native plugins compatible for Editor in 4.92 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.091 seconds
-Domain Reload Profiling: 1548ms
-	BeginReloadAssembly (158ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (10ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (32ms)
-	RebuildCommonClasses (31ms)
-	RebuildNativeTypeToScriptingClass (11ms)
-	initialDomainReloadingComplete (30ms)
-	LoadAllAssembliesAndSetupDomain (225ms)
-		LoadAssemblies (297ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (13ms)
-			TypeCache.Refresh (7ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (5ms)
-	FinalizeReload (1091ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (422ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (9ms)
-			SetLoadedEditorAssemblies (3ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (78ms)
-			ProcessInitializeOnLoadAttributes (294ms)
-			ProcessInitializeOnLoadMethodAttributes (28ms)
-			AfterProcessingInitializeOnLoad (10ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (13ms)
-Refreshing native plugins compatible for Editor in 5.34 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4001 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 41 unused Assets / (217.3 KB). Loaded Objects now: 4529.
-Memory consumption went from 136.3 MB to 136.0 MB.
-Total: 3.418800 ms (FindLiveObjects: 0.394700 ms CreateObjectMapping: 0.118400 ms MarkObjects: 2.691400 ms  DeleteObjects: 0.213300 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Buttons/Puzzle stage & settings GUI Pack/Image_red/+.png
+  artifactKey: Guid(082ac95b597b5f049906d7f139728c63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Buttons/Puzzle stage & settings GUI Pack/Image_red/+.png using Guid(082ac95b597b5f049906d7f139728c63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed37ead3ce1a3deb848a112026f64b86') in 0.036379 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: Der E/A-Vorgang wurde wegen eines Threadendes oder einer Anwendungsanforderung abgebrochen.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
