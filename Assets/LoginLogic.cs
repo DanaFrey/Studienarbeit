@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+//used for UnityWebRequest
+//using UnityEngine.Networking;
 
 public class LoginLogic : MonoBehaviour
 {
@@ -19,6 +21,7 @@ public class LoginLogic : MonoBehaviour
 
     IEnumerator Register()
     {
+        //eventually, change from WWWForm to newer UnityWebRequest
         WWWForm form = new WWWForm();
         form.AddField("username", username.text);
         form.AddField("password", password.text);
@@ -36,6 +39,7 @@ public class LoginLogic : MonoBehaviour
 
     public void VerifyInputs()
     {
+        //The username should be between 5 and 16 characters long and the password should be at least 6 characters long
         registerButton.interactable = (username.text.Length >= 5 && username.text.Length <= 16 && password.text.Length >= 6);
     }
 }
