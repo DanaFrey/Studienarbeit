@@ -13,6 +13,8 @@ public class LoginLogic : MonoBehaviour
     public Button registerButton;
     public GameObject loginScreenSignedOut;
     public GameObject loginScreenSignedIn;
+    public GameObject messageBox;
+    public Text messageText;
 
     public void CallRegister()
     {
@@ -31,10 +33,16 @@ public class LoginLogic : MonoBehaviour
         if (www.text == "0")
         {
             Debug.Log("User created successfully.");
+            messageBox.SetActive(false);
             //loginScreenSignedOut.SetActive(false);
             //loginScreenSignedIn.SetActive(true);
         }
-        else Debug.Log("User registration failed. Error #" + www.text);
+        else
+        {
+            messageBox.SetActive(true);
+            messageText.text = "User registration failed. Error #" + www.text;
+
+        }
     }
 
     public void VerifyInputs()
