@@ -14,9 +14,10 @@
     //check if the username already exists in database
     $namecheckquery = "SELECT username FROM players WHERE username='" . $username . "';";
 
-    $namecheck = mysqli_query($con, $namecheckquery) or die("2: Name check failed."); //Error #2: Name check failed.
+    //$namecheck = mysqli_query($con, $namecheckquery) or die("2: Name check failed."); //Error #2: Name check failed.
+    $namecheck = $con->query($namecheckquery);
 
-    if(mysqli_num_rows($namecheck) > 0)
+    if($namecheck->num_rows > 0)
     {
         echo "3: This name already exists."; //Error #3: Username already exists in database, can't register.
         exit();

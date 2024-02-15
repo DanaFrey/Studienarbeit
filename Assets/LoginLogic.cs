@@ -1,9 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Networking;
 using UnityEngine.UI;
-//used for UnityWebRequest
-//using UnityEngine.Networking;
 
 public class LoginLogic : MonoBehaviour
 {
@@ -11,6 +10,7 @@ public class LoginLogic : MonoBehaviour
     public InputField username;
     public InputField password;
     public Button registerButton;
+    public Button loginButton;
     public GameObject loginScreenSignedOut;
     public GameObject loginScreenSignedIn;
     public GameObject messageBox;
@@ -21,9 +21,34 @@ public class LoginLogic : MonoBehaviour
         StartCoroutine(Register());
     }
 
+    public void CallLogin()
+    {
+        StartCoroutine(Login());
+    }
+
     IEnumerator Register()
     {
-        //eventually, change from WWWForm to newer UnityWebRequest
+        //eventually, change from WWWForm to newer UnityWebRequest, possible approach:
+        //WWWForm form = new WWWForm();
+        //form.AddField("username", username.text);
+        //form.AddField("password", password.text);
+        //using (UnityWebRequest www = UnityWebRequest.Post("http://localhost/sqlconnect/register.php", form))
+        //{
+            //yield return www.SendWebRequest();
+            //if (www.result == UnityWebRequest.Result.ConnectionError)
+            //{
+                //messageBox.SetActive(true);
+                //messageText.text = "User registration failed. Error #" + www.result;
+            //}
+            //else
+            //{
+                //Debug.Log("User created successfully.");
+                //messageBox.SetActive(false);
+                //loginScreenSignedOut.SetActive(false);
+                //loginScreenSignedIn.SetActive(true);
+            //}
+        //}
+
         WWWForm form = new WWWForm();
         form.AddField("username", username.text);
         form.AddField("password", password.text);
@@ -33,9 +58,10 @@ public class LoginLogic : MonoBehaviour
         if (www.text == "0")
         {
             Debug.Log("User created successfully.");
-            messageBox.SetActive(false);
-            //loginScreenSignedOut.SetActive(false);
-            //loginScreenSignedIn.SetActive(true);
+            string message = "Registration was successful";
+            StartCoroutine(LateCall(messageBox, messageText, message));
+            loginScreenSignedOut.SetActive(false);
+            loginScreenSignedIn.SetActive(true);
         }
         else
         {
@@ -45,9 +71,36 @@ public class LoginLogic : MonoBehaviour
         }
     }
 
+    IEnumerator Login()
+    {
+        WWWForm form = new WWWForm();
+        form.AddField("username", username.text);
+        form.AddField("password", password.text);
+        WWW www = new WWW("http://localhost/sqlconnect/login.php", form);
+        yield return www;
+
+        if (www.text[0].Equals("0"))
+        {
+            Debug.Log("Logged in successfully.");
+        }
+
+        //HIER WEITERMACHEN
+    }
+
+    IEnumerator LateCall(GameObject gameObj, Text messageText, string message)
+    {
+        gameObj.SetActive(true);
+        messageText.text = message;
+        yield return new WaitForSeconds(3);
+        gameObj.SetActive(false);
+    }
+
     public void VerifyInputs()
     {
         //The username should be between 5 and 16 characters long and the password should be at least 6 characters long
         registerButton.interactable = (username.text.Length >= 5 && username.text.Length <= 16 && password.text.Length >= 6);
+        loginButton.interactable = (username.text.Length >= 5 && username.text.Length <= 16 && password.text.Length >= 6);
     }
-}
+
+    
+    }
