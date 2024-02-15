@@ -1,15 +1,21 @@
 SETUP:
 
 1.	XAMPP installieren
-2.	C:\xampp\phpMyAdmin\config.inc.php öffnen, Zeile 21 bearbeiten '' -> 'root', 
+2.	XAMPP Control Panel als Administrator öffnen und Apache + MySQL starten
+3.	Bei MySQL auf Admin drücken
+4.	Auf Website zu "Benutzerkonten" navigieren
+5. 	Benutzername "root", Hostname "localhost" anklicken, "Change password" anklicken, 
+	"root" als Passwort setzen, "ok" anklicken
+6.	Apache + MySQL stoppen, XAMPP schließen
+7.	C:\xampp\phpMyAdmin\config.inc.php öffnen, Zeile 21 bearbeiten '' -> 'root', 
 	Zeile 23 bearbeiten true -> false
-3.	C:\xampp\apache\conf\httpd.conf öffnen und "DocumentRoot "C:/xampp/htdocs"" ändern zu
+8.	C:\xampp\apache\conf\httpd.conf öffnen und "DocumentRoot "C:/xampp/htdocs"" ändern zu
 	dem htdocs Ordner des GitHub Repositorys (in meinem Fall: "C:\Users\danaf\UnityProjects\Studienarbeit\htdocs")
 	dann <Directory> (direkt darunter) auch zu C:\Users\danaf\UnityProjects\Studienarbeit\htdocs
 	ändern
-4.	XAMPP Control Panel als Admin öffnen und Apache und MySQL starten
-5.	Auf "Admin" bei MySQL drücken
-6.	Eine Datenbank namens "studienarbeit" und eine Tabelle mit 4 Spalten namens "players"
+9.	XAMPP Control Panel als Admin öffnen und Apache und MySQL starten
+10.	Auf "Admin" bei MySQL drücken
+11.	Eine Datenbank namens "studienarbeit" und eine Tabelle mit 4 Spalten namens "players"
 	erstellen (id: int(10), primary, auto-increment; username: varchar(16), unique;
 	hash: varchar(100); salt: varchar(50))
 
