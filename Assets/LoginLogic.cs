@@ -6,7 +6,6 @@ using UnityEngine.UI;
 
 public class LoginLogic : MonoBehaviour
 {
-    public bool loggedIn = false;
     public InputField username;
     public InputField password;
     public Button registerButton;
@@ -15,6 +14,7 @@ public class LoginLogic : MonoBehaviour
     public GameObject loginScreenSignedIn;
     public GameObject messageBox;
     public Text messageText;
+    public Text displayName;
 
     public void CallRegister()
     {
@@ -57,11 +57,13 @@ public class LoginLogic : MonoBehaviour
 
         if (www.text == "0")
         {
-            Debug.Log("User created successfully.");
             string message = "Registration was successful";
             StartCoroutine(LateCall(messageBox, messageText, message));
+            DBManager.username = username.text;
+            displayName.text = username.text;
             loginScreenSignedOut.SetActive(false);
             loginScreenSignedIn.SetActive(true);
+            Debug.Log("User created successfully.");
         }
         else
         {
@@ -79,12 +81,18 @@ public class LoginLogic : MonoBehaviour
         WWW www = new WWW("http://localhost/sqlconnect/login.php", form);
         yield return www;
 
-        if (www.text[0].Equals("0"))
+        if (www.text.Equals("0"))
         {
+            DBManager.username = username.text;
+            displayName.text = username.text;
+            loginScreenSignedOut.SetActive(false);
+            loginScreenSignedIn.SetActive(true);
             Debug.Log("Logged in successfully.");
         }
-
-        //HIER WEITERMACHEN
+        else
+        {
+            Debug.Log("User log in failed. Error #" + www.text);
+        }
     }
 
     IEnumerator LateCall(GameObject gameObj, Text messageText, string message)
@@ -97,9 +105,9 @@ public class LoginLogic : MonoBehaviour
 
     public void VerifyInputs()
     {
-        //The username should be between 5 and 16 characters long and the password should be at least 6 characters long
-        registerButton.interactable = (username.text.Length >= 5 && username.text.Length <= 16 && password.text.Length >= 6);
-        loginButton.interactable = (username.text.Length >= 5 && username.text.Length <= 16 && password.text.Length >= 6);
+        //The username should be between 5 and 13 characters long and the password should be at least 6 characters long
+        registerButton.interactable = (username.text.Length >= 5 && username.text.Length <= 13 && password.text.Length >= 6);
+        loginButton.interactable = (username.text.Length >= 5 && username.text.Length <= 13 && password.text.Length >= 6);
     }
 
     

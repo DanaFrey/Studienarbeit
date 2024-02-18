@@ -8,6 +8,7 @@ public class TitleScreenLogic : MonoBehaviour
 
     public GameObject settingsScreen;
     public GameObject loginScreen;
+    public GameObject loggedInScreen;
     public GameObject messageBox;
 
     public void Start()
@@ -32,13 +33,22 @@ public class TitleScreenLogic : MonoBehaviour
     {
         messageBox.SetActive(false);
         if (settingsScreen.activeSelf) settingsScreen.SetActive(false);
-        if (loginScreen.activeSelf) loginScreen.SetActive(false);
-        else loginScreen.SetActive(true);
+        if (DBManager.LoggedIn)
+        {
+            if (loggedInScreen.activeSelf) loggedInScreen.SetActive(false);
+            else loggedInScreen.SetActive(true);
+        }
+        else
+        {
+            if (loginScreen.activeSelf) loginScreen.SetActive(false);
+            else loginScreen.SetActive(true);
+        }
     }
 
     public void closeLogin()
     {
         loginScreen.SetActive(false);
+        loggedInScreen.SetActive(false);
         messageBox.SetActive(false);
     }
 }
