@@ -1,11 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class TitleScreenLogic : MonoBehaviour
 {
     [SerializeField] private VolumeSettings volumeSettings;
 
+    public InputField username;
+    public InputField password;
     public GameObject settingsScreen;
     public GameObject loginScreen;
     public GameObject loggedInScreen;
@@ -17,6 +20,8 @@ public class TitleScreenLogic : MonoBehaviour
     }
     public void openSettings()
     {
+        username.text = "";
+        password.text = "";
         messageBox.SetActive(false);
         if (loginScreen.activeSelf) loginScreen.SetActive(false);
         if (settingsScreen.activeSelf) settingsScreen.SetActive(false);
@@ -31,6 +36,8 @@ public class TitleScreenLogic : MonoBehaviour
 
     public void openLogin()
     {
+        username.text = "";
+        password.text = "";
         messageBox.SetActive(false);
         if (settingsScreen.activeSelf) settingsScreen.SetActive(false);
         if (DBManager.LoggedIn)
@@ -47,6 +54,8 @@ public class TitleScreenLogic : MonoBehaviour
 
     public void closeLogin()
     {
+        username.text = "";
+        password.text = "";
         loginScreen.SetActive(false);
         loggedInScreen.SetActive(false);
         messageBox.SetActive(false);

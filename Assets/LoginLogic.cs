@@ -10,11 +10,18 @@ public class LoginLogic : MonoBehaviour
     public InputField password;
     public Button registerButton;
     public Button loginButton;
+    public Button showPassButton;
+    public Button hidePassButton;
     public GameObject loginScreenSignedOut;
     public GameObject loginScreenSignedIn;
     public GameObject messageBox;
     public Text messageText;
     public Text displayName;
+
+    private void Start()
+    {
+        password.contentType = InputField.ContentType.Password;
+    }
 
     public void CallRegister()
     {
@@ -63,6 +70,8 @@ public class LoginLogic : MonoBehaviour
             displayName.text = username.text;
             loginScreenSignedOut.SetActive(false);
             loginScreenSignedIn.SetActive(true);
+            username.text = "";
+            password.text = "";
             Debug.Log("User created successfully.");
         }
         else
@@ -83,16 +92,28 @@ public class LoginLogic : MonoBehaviour
 
         if (www.text.Equals("0"))
         {
+            string message = "Login was successful";
+            StartCoroutine(LateCall(messageBox, messageText, message));
             DBManager.username = username.text;
             displayName.text = username.text;
             loginScreenSignedOut.SetActive(false);
             loginScreenSignedIn.SetActive(true);
+            username.text = "";
+            password.text = "";
             Debug.Log("Logged in successfully.");
         }
         else
         {
-            Debug.Log("User log in failed. Error #" + www.text);
+            messageBox.SetActive(true);
+            messageText.text = "Login failed. Error #" + www.text;
         }
+    }
+
+    public void LogOut()
+    {
+        DBManager.username = null;
+        loginScreenSignedIn.SetActive(false);
+        loginScreenSignedOut.SetActive(true);
     }
 
     IEnumerator LateCall(GameObject gameObj, Text messageText, string message)
@@ -110,5 +131,23 @@ public class LoginLogic : MonoBehaviour
         loginButton.interactable = (username.text.Length >= 5 && username.text.Length <= 13 && password.text.Length >= 6);
     }
 
-    
+    public void showPass()
+    {
+        showPassButton.gameObject.SetActive(false);
+        password.contentType = InputField.ContentType.Standard;
+        password.DeactivateInputField();
+        password.ActivateInputField();
+        hidePassButton.gameObject.SetActive(true);
     }
+
+    public void hidePass()
+    {
+        hidePassButton.gameObject.SetActive(false);
+        password.contentType = InputField.ContentType.Password;
+        password.DeactivateInputField();
+        password.ActivateInputField();
+        showPassButton.gameObject.SetActive(true);
+    }
+
+
+}
