@@ -8,10 +8,16 @@ public class LoginLogic : MonoBehaviour
 {
     public InputField username;
     public InputField password;
+    public InputField currentPassword;
+    public InputField newPassword;
     public Button registerButton;
     public Button loginButton;
     public Button showPassButton;
     public Button hidePassButton;
+    public Button showCurrentPassButton;
+    public Button hideCurrentPassButton;
+    public Button showNewPassButton;
+    public Button hideNewPassButton;
     public GameObject loginScreenSignedOut;
     public GameObject loginScreenSignedIn;
     public GameObject messageBox;
@@ -21,6 +27,8 @@ public class LoginLogic : MonoBehaviour
     private void Start()
     {
         password.contentType = InputField.ContentType.Password;
+        currentPassword.contentType = InputField.ContentType.Password;
+        newPassword.contentType = InputField.ContentType.Password;
     }
 
     public void CallRegister()
@@ -31,6 +39,11 @@ public class LoginLogic : MonoBehaviour
     public void CallLogin()
     {
         StartCoroutine(Login());
+    }
+
+    public void CallChangePassword()
+    {
+        StartCoroutine(ChangePassword());
     }
 
     IEnumerator Register()
@@ -109,6 +122,29 @@ public class LoginLogic : MonoBehaviour
         }
     }
 
+    IEnumerator ChangePassword()
+    {
+        WWWForm form = new WWWForm();
+        form.AddField("username", DBManager.username);
+        form.AddField("currentPassword", currentPassword.text);
+        form.AddField("newPassword", newPassword.text);
+        WWW www = new WWW("http://localhost/sqlconnect/changepass.php", form);
+        yield return www;
+
+        if (www.text.Equals("0"))
+        {
+            string message = "Password successfully changed.";
+            StartCoroutine(LateCall(messageBox, messageText, message));
+            currentPassword.text = "";
+            newPassword.text = "";
+        }
+        else
+        {
+            messageBox.SetActive(true);
+            messageText.text = "Password change failed. Error #" + www.text;
+        }
+    }
+
     public void LogOut()
     {
         DBManager.username = null;
@@ -131,7 +167,7 @@ public class LoginLogic : MonoBehaviour
         loginButton.interactable = (username.text.Length >= 5 && username.text.Length <= 13 && password.text.Length >= 6);
     }
 
-    public void showPass()
+    public void showPassLogin()
     {
         showPassButton.gameObject.SetActive(false);
         password.contentType = InputField.ContentType.Standard;
@@ -140,13 +176,49 @@ public class LoginLogic : MonoBehaviour
         hidePassButton.gameObject.SetActive(true);
     }
 
-    public void hidePass()
+    public void hidePassLogin()
     {
         hidePassButton.gameObject.SetActive(false);
         password.contentType = InputField.ContentType.Password;
         password.DeactivateInputField();
         password.ActivateInputField();
         showPassButton.gameObject.SetActive(true);
+    }
+
+    public void showCurrentPass()
+    {
+        showCurrentPassButton.gameObject.SetActive(false);
+        currentPassword.contentType = InputField.ContentType.Standard;
+        currentPassword.DeactivateInputField();
+        currentPassword.ActivateInputField();
+        hideCurrentPassButton.gameObject.SetActive(true);
+    }
+
+    public void hideCurrentPass()
+    {
+        hideCurrentPassButton.gameObject.SetActive(false);
+        currentPassword.contentType = InputField.ContentType.Password;
+        currentPassword.DeactivateInputField();
+        currentPassword.ActivateInputField();
+        showCurrentPassButton.gameObject.SetActive(true);
+    }
+
+    public void showNewPass()
+    {
+        showNewPassButton.gameObject.SetActive(false);
+        newPassword.contentType = InputField.ContentType.Standard;
+        newPassword.DeactivateInputField();
+        newPassword.ActivateInputField();
+        hideNewPassButton.gameObject.SetActive(true);
+    }
+
+    public void hideNewPass()
+    {
+        hideNewPassButton.gameObject.SetActive(false);
+        newPassword.contentType = InputField.ContentType.Password;
+        newPassword.DeactivateInputField();
+        newPassword.ActivateInputField();
+        showNewPassButton.gameObject.SetActive(true);
     }
 
 

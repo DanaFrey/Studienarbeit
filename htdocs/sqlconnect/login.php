@@ -15,7 +15,6 @@
 
 	$namecheckquery = "SELECT username, salt, hash FROM players WHERE username='" . $username . "';";
 
-    //$namecheck = mysqli_query($con, $namecheckquery) or die("2: Name check failed."); //Error #2: Name check failed.
     $namecheck = $con->query($namecheckquery);
 
     if(mysqli_num_rows($namecheck) == 0){

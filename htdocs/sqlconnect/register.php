@@ -14,7 +14,6 @@
     //check if the username already exists in database
     $namecheckquery = "SELECT username FROM players WHERE username='" . $username . "';";
 
-    //$namecheck = mysqli_query($con, $namecheckquery) or die("2: Name check failed."); //Error #2: Name check failed.
     $namecheck = $con->query($namecheckquery);
 
     if($namecheck->num_rows > 0)
