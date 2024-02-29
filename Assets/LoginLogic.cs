@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class LoginLogic : MonoBehaviour
@@ -12,6 +13,7 @@ public class LoginLogic : MonoBehaviour
     public InputField newPassword;
     public Button registerButton;
     public Button loginButton;
+    public Button submitButton;
     public Button showPassButton;
     public Button hidePassButton;
     public Button showCurrentPassButton;
@@ -167,6 +169,12 @@ public class LoginLogic : MonoBehaviour
         loginButton.interactable = (username.text.Length >= 5 && username.text.Length <= 13 && password.text.Length >= 6);
     }
 
+    public void VerifyPasswordReset()
+    {
+        //The password should be at least 6 characters long
+        submitButton.interactable = (currentPassword.text.Length >= 6 && newPassword.text.Length >= 6);
+    }
+
     public void showPassLogin()
     {
         showPassButton.gameObject.SetActive(false);
@@ -220,6 +228,4 @@ public class LoginLogic : MonoBehaviour
         newPassword.ActivateInputField();
         showNewPassButton.gameObject.SetActive(true);
     }
-
-
 }

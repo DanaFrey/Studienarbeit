@@ -664,6 +664,7 @@ MonoBehaviour:
   newPassword: {fileID: 1452512759}
   registerButton: {fileID: 1050898643}
   loginButton: {fileID: 199385807}
+  submitButton: {fileID: 1520310609}
   showPassButton: {fileID: 1527967782}
   hidePassButton: {fileID: 1851676212}
   showCurrentPassButton: {fileID: 1808401067}
@@ -2882,10 +2883,18 @@ MonoBehaviour:
   volumeSettings: {fileID: 796970469}
   username: {fileID: 1984418801}
   password: {fileID: 666881173}
+  currentPassword: {fileID: 1673859755}
+  newPassword: {fileID: 1452512759}
   settingsScreen: {fileID: 796970467}
   loginScreen: {fileID: 1718472709}
   loggedInScreen: {fileID: 1078388104}
   messageBox: {fileID: 751995147}
+  showPassButton: {fileID: 1527967782}
+  hidePassButton: {fileID: 1851676212}
+  showCurrentPassButton: {fileID: 1808401067}
+  hideCurrentPassButton: {fileID: 2023478310}
+  showNewPassButton: {fileID: 2086278789}
+  hideNewPassButton: {fileID: 210907964}
 --- !u!4 &951720529
 Transform:
   m_ObjectHideFlags: 0
@@ -3689,7 +3698,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1159046267}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 951720528}
+        m_TargetAssemblyTypeName: TitleScreenLogic, Assembly-CSharp
+        m_MethodName: StartGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1159046267
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4558,7 +4579,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 197520695}
         m_TargetAssemblyTypeName: LoginLogic, Assembly-CSharp
-        m_MethodName: VerifyInputs
+        m_MethodName: VerifyPasswordReset
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4692,7 +4713,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1520310610}
   m_OnClick:
     m_PersistentCalls:
@@ -5289,7 +5310,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 197520695}
         m_TargetAssemblyTypeName: LoginLogic, Assembly-CSharp
-        m_MethodName: VerifyInputs
+        m_MethodName: VerifyPasswordReset
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
