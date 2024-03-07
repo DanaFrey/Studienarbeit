@@ -22,6 +22,7 @@ public class TitleScreenLogic : MonoBehaviour
     public Button hideCurrentPassButton;
     public Button showNewPassButton;
     public Button hideNewPassButton;
+    public Text displayName;
 
     public void Start()
     {
@@ -48,6 +49,7 @@ public class TitleScreenLogic : MonoBehaviour
         if (settingsScreen.activeSelf) settingsScreen.SetActive(false);
         if (DBManager.LoggedIn)
         {
+            displayName.text = DBManager.username;
             if (loggedInScreen.activeSelf) loggedInScreen.SetActive(false);
             else loggedInScreen.SetActive(true);
         }
