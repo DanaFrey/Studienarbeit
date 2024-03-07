@@ -19,6 +19,8 @@ SETUP:
 	erstellen (id: int(10), primary, auto-increment; username: varchar(16), unique;
 	hash: varchar(100); salt: varchar(50))
 
+(Bei der Fertigung des Projekts einen Export mit XAMPP erstellen und die Datei zum exportieren mitschicken)
+
 NUTZUNG:
 
 1. XAMPP als Administrator öffnen

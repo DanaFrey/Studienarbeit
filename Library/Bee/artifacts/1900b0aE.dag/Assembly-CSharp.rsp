@@ -376,9 +376,13 @@
 "Assets/AudioManager.cs"
 "Assets/DBManager.cs"
 "Assets/Fonts/Script/scriptTexttest.cs"
+"Assets/GameMenuLogic.cs"
 "Assets/LoginLogic.cs"
 "Assets/TitleScreenLogic.cs"
 "Assets/VolumeSettings.cs"
+"Assets/World Logic/World1Logic.cs"
+"Assets/World Logic/World2Logic.cs"
+"Assets/World Logic/World3Logic.cs"
 -langversion:9.0
 
 /deterministic
