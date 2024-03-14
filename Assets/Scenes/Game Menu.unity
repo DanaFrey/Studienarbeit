@@ -1582,7 +1582,7 @@ GameObject:
   - component: {fileID: 576263194}
   - component: {fileID: 576263193}
   m_Layer: 5
-  m_Name: World 1
+  m_Name: Mathematics
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5524,7 +5524,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: World 1
+  m_Text: Mathematics
 --- !u!222 &1590284337
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -377,6 +377,7 @@
 "Assets/DBManager.cs"
 "Assets/Fonts/Script/scriptTexttest.cs"
 "Assets/GameMenuLogic.cs"
+"Assets/Level Logic/World1Level1Logic.cs"
 "Assets/LoginLogic.cs"
 "Assets/TitleScreenLogic.cs"
 "Assets/VolumeSettings.cs"

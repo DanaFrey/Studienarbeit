@@ -64,6 +64,7 @@
     <Compile Include="Assets\LoginLogic.cs" />
     <Compile Include="Assets\World Logic\World1Logic.cs" />
     <Compile Include="Assets\Fonts\Script\scriptTexttest.cs" />
+    <Compile Include="Assets\Level Logic\World1Level1Logic.cs" />
     <Compile Include="Assets\World Logic\World3Logic.cs" />
     <Compile Include="Assets\DBManager.cs" />
     <Compile Include="Assets\VolumeSettings.cs" />
