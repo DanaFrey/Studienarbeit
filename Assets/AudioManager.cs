@@ -9,7 +9,6 @@ public class AudioManager : MonoBehaviour
 
     [Header("---------- Audio Clip ----------")]
     public AudioClip mainscreen;
-    public AudioClip gamemenu;
     public AudioClip click;
     public AudioClip world1level1;
     public AudioClip world2level1;
@@ -42,20 +41,26 @@ public class AudioManager : MonoBehaviour
 
     private void ChangeMusic()
     {
-        if (SceneManager.GetActiveScene().name == "World 1 Level 1" && musicSource.clip != world1level1)
+        if (SceneManager.GetActiveScene().name == "World1Level1" && musicSource.clip != world1level1)
         {
             musicSource.Stop();
             musicSource.clip = world1level1;
             musicSource.Play();
-        }else if(SceneManager.GetActiveScene().name == "World 2 Level 1" && musicSource.clip != world2level1)
+        }else if(SceneManager.GetActiveScene().name == "World2Level1" && musicSource.clip != world2level1)
         {
             musicSource.Stop();
             musicSource.clip = world2level1;
             musicSource.Play();
-        }else if (SceneManager.GetActiveScene().name == "World 3 Level 1" && musicSource.clip != world3level1)
+        }else if (SceneManager.GetActiveScene().name == "World3Level1" && musicSource.clip != world3level1)
         {
             musicSource.Stop();
             musicSource.clip = world3level1;
+            musicSource.Play();
+        }
+        else if (!(SceneManager.GetActiveScene().name == "World1Level1" || SceneManager.GetActiveScene().name == "World2Level1" || SceneManager.GetActiveScene().name == "World3Level1") && musicSource.clip != mainscreen)
+        {
+            musicSource.Stop();
+            musicSource.clip = mainscreen;
             musicSource.Play();
         }
     }
