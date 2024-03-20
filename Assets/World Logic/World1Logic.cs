@@ -15,6 +15,7 @@ public class World1Logic : MonoBehaviour
     void Start()
     {
         volumeSettings.Start();
+        //HIER SOLL ABGEFRAGT WERDEN, OB ES IN DER DATENBANK FÜR LEVEL X EINEN HINTERLEGTEN SCORE GIBT, FALLS JA -> ANZEIGEN DER NOTE
     }
 
     public void ReturnToGameMenu()

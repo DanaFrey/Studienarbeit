@@ -1,12 +1,8 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.SocialPlatforms.Impl;
 using UnityEngine.UI;
-using System.Diagnostics;
 
 public class World1Level1Logic : MonoBehaviour
 {
@@ -20,14 +16,19 @@ public class World1Level1Logic : MonoBehaviour
     public Text grade;
     public Text time;
     public Text endScore;
+    public Text endTime;
     public GameObject resultScreen;
-    public string rightAnswer = "";
-
-    Stopwatch stopwatch = new Stopwatch();
+    public GameObject settingsScreen;
+    public GameObject messageBox;
+    private string rightAnswer = "";
+    private float currentTime;
+    private bool timerActive = false;
+    private int equationsCount = 0;
 
     //[x][1] always represents the correct answer
     string[][] equations = new string[][]
     {
+        //45 equastions
         new string[] {"6 x 50 = __ ?", "300", "240", "250", "360"},
         new string[] {"17 x 7 = __ ?", "119", "149", "122", "177"},
         new string[] {"35 : 5 = __ ?", "7", "5", "6", "8"},
@@ -36,18 +37,62 @@ public class World1Level1Logic : MonoBehaviour
         new string[] {"6 x (3 + 5) = __ ?", "48", "23", "33", "54"},
         new string[] {"(70 - 14) : 7 = __ ?", "8", "68", "49", "6"},
         new string[] {"650 - 64 = __ ?", "586", "596", "584", "594"},
+        new string[] {"8 x 20 = __ ?", "160", "140", "180", "200"},
+        new string[] {"13 x 6 = __ ?", "78", "68", "88", "72"},
+        new string[] {"42 : 7 = __ ?", "6", "8", "5", "7"},
+        new string[] {"9 x 8 = __ ?", "72", "64", "81", "56"},
+        new string[] {"537 – ( 256 – 126) = __ ?", "407", "417", "427", "397"},
+        new string[] {"7 x (4 + 6) = __ ?", "70", "34", "63", "64"},
+        new string[] {"(90 - 18) : 6 = __ ?", "12", "87", "64", "8"},
+        new string[] {"820 - 76 = __ ?", "744", "764", "784", "734"},
+        new string[] {"24 x 4 = __ ?", "96", "86", "104", "88"},
+        new string[] {"56 : 8 = __ ?", "7", "6", "8", "9"},
+        new string[] {"7 x 11 = __ ?", "77", "66", "88", "70"},
+        new string[] {"629 – ( 375 – 175) = __ ?", "429", "439", "449", "419"},
+        new string[] {"9 x (6 + 7) = __ ?", "117", "76", "61", "81"},
+        new string[] {"(120 - 24) : 6 = __ ?", "16", "96", "116", "12"},
+        new string[] {"950 - 84 = __ ?", "866", "876", "886", "856"},
+        new string[] {"3.5 x 4 = __ ?", "14", "13", "15", "12"},
+        new string[] {"7.2 x 2 = __ ?", "14.4", "12.2", "15.2", "13.4"},
+        new string[] {"15.6 : 3 = __ ?", "5.2", "4.6", "6.2", "5.6"},
+        new string[] {"2.3 x 6 = __ ?", "13.8", "14.3", "12.3", "13.2"},
+        new string[] {"12.7 – ( 6.4 – 2.1) = __ ?", "8.4", "9.1", "7.4", "8.9"},
+        new string[] {"4.5 x (2 + 3) = __ ?", "22.5", "18.5", "20.5", "24.5"},
+        new string[] {"(18.9 - 4.1) : 2 = __ ?", "7.4", "8.6", "6.4", "7.8"},
+        new string[] {"36.4 - 6.6 = __ ?", "29.8", "28.4", "30.4", "29.6"},
+        new string[] {"5.2 x 3 = __ ?", "15.6", "14.2", "16.2", "13.8"},
+        new string[] {"8.7 x 2 = __ ?", "17.4", "18.7", "16.4", "15.7"},
+        new string[] {"14.4 : 2 = __ ?", "7.2", "6.4", "8.4", "7.8"},
+        new string[] {"3.6 x 5 = __ ?", "18", "16", "19", "17"},
+        new string[] {"6.8 x (3 + 2) = __ ?", "34", "30", "28", "32"},
+        new string[] {"(19.8 - 3.4) : 2 = __ ?", "8.2", "8.6", "7.6", "8.3"},
+        new string[] {"42.6 - 8.3 = __ ?", "34.3", "33.6", "35.6", "34.8"},
+        new string[] {"4.3 x 2 = __ ?", "8.6", "7.6", "9.6", "8.3"},
+        new string[] {"9.6 : 3 = __ ?", "3.2", "3.6", "6.9", "2.6"},
+        new string[] {"18.9 : 3 = __ ?", "6.3", "5.9", "7.3", "6.9"},
+        new string[] {"7.4 x 4 = __ ?", "29.6", "28.4", "30.4", "27.6"},
+        new string[] {"36.7 – (14.2 – 8.2) = __ ?", "30.7", "31.8", "32.1", "30.5"},
+        new string[] {"5.5 x (4 + 3) = __ ?", "38.5", "33.5", "40.5", "35.5"},
+        new string[] {"(25.6 - 5.8) : 2 = __ ?", "9.9", "9.4", "10.1", "9.1"},
+        new string[] {"48.9 - 9.2 = __ ?", "39.7", "38.1", "40.1", "39.5"},
     };
 
     void Start()
     {
         volumeSettings.Start();
+        currentTime = 0;
+        StartTimer();
         LoadNextEquation();
-        stopwatch.Start();
     }
 
     void Update()
     {
-        //HIER EVTL IMPLEMENTIEREN, DASS DER TIMER DAUERHAFT AKTUALISIERT WIRD
+        if (timerActive)
+        {
+            currentTime = currentTime + Time.deltaTime;
+        }
+        TimeSpan timeSpan = TimeSpan.FromSeconds(currentTime);
+        time.text = timeSpan.Minutes.ToString() + ":" + timeSpan.Seconds.ToString();
     }
 
     public void ReturnToWorld1Menu()
@@ -59,6 +104,10 @@ public class World1Level1Logic : MonoBehaviour
     {
         try
         {
+            if(equationsCount == 10)
+            {
+                throw new IndexOutOfRangeException();
+            }
             //the four answer buttons
             int[] answersIndices = { 1, 2, 3, 4 };
             //pick a random equation
@@ -82,16 +131,16 @@ public class World1Level1Logic : MonoBehaviour
             answersIndices = answersIndices.Where((value, index) => index != randomAnswersIndices).ToArray();
             //remove the equation from the equations array
             equations = equations.Where((value, index) => index != rInt).ToArray();
+            equationsCount++;
         }catch(IndexOutOfRangeException ex)
         {
-            stopwatch.Stop();
-            TimeSpan elapsedTime = stopwatch.Elapsed;
-            string elapsedTimeString = elapsedTime.ToString();
+            StopTimer();
             resultScreen.SetActive(true);
             grade.text = DetermineGrade();
-            time.text = elapsedTimeString;
+            endTime.text = time.text;
             endScore.text = score.text;
-            //RESULTS SCRENN MUSS NOCH GEMACHT WERDEN, SOLL NOTE, SCORE, GEBRAUCHTE ZEIT, RESUME BUTTON BEINHALTEN
+            //HIER NOCH IMPLEMENTIEREN, DASS ERGEBNIS IN DATENBANK GESCHRIEBEN WIRD (UPDATE), WIRD NUR ÜBERSCHRIEBEN,
+            //WENN ERGEBNIS BESSER IST ALS ZUVOR HINTERLEGTES ERGEBNIS
         }
     }
 
@@ -108,6 +157,10 @@ public class World1Level1Logic : MonoBehaviour
         {
             int scoreInt = Int32.Parse(score.text);
             scoreInt--;
+            if(scoreInt < 0)
+            {
+                scoreInt = 0;
+            }
             score.text = scoreInt.ToString();
         }
     }
@@ -125,6 +178,10 @@ public class World1Level1Logic : MonoBehaviour
         {
             int scoreInt = Int32.Parse(score.text);
             scoreInt--;
+            if (scoreInt < 0)
+            {
+                scoreInt = 0;
+            }
             score.text = scoreInt.ToString();
         }
     }
@@ -142,6 +199,10 @@ public class World1Level1Logic : MonoBehaviour
         {
             int scoreInt = Int32.Parse(score.text);
             scoreInt--;
+            if (scoreInt < 0)
+            {
+                scoreInt = 0;
+            }
             score.text = scoreInt.ToString();
         }
     }
@@ -159,15 +220,46 @@ public class World1Level1Logic : MonoBehaviour
         {
             int scoreInt = Int32.Parse(score.text);
             scoreInt--;
+            if (scoreInt < 0)
+            {
+                scoreInt = 0;
+            }
             score.text = scoreInt.ToString();
         }
     }
 
+    public void StartTimer()
+    {
+        timerActive = true;
+    }
+
+    public void StopTimer()
+    {
+        timerActive = false;
+    }
+
     public string DetermineGrade()
     {
-        string gradeString = "";
+        string gradeString = "A+";
         //MUSS NOCH IMPLEMENTIERT WERDEN
         //evtl score durch Zeit vom Timer, dann je nachdem in welcher Range dieses ergebnis is, zuteilung auf grades a bis f
         return gradeString;
+    }
+
+    public void ResumeButton()
+    {
+        SceneManager.LoadScene("World 1");
+    }
+
+    public void openSettings()
+    {
+        if (settingsScreen.activeSelf) settingsScreen.SetActive(false);
+        else settingsScreen.SetActive(true);
+    }
+
+    public void closeSettings()
+    {
+        messageBox.SetActive(false);
+        settingsScreen.SetActive(false);
     }
 }
