@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -139,8 +140,28 @@ public class World1Level1Logic : MonoBehaviour
             grade.text = DetermineGrade();
             endTime.text = time.text;
             endScore.text = score.text;
-            //HIER NOCH IMPLEMENTIEREN, DASS ERGEBNIS IN DATENBANK GESCHRIEBEN WIRD (UPDATE), WIRD NUR ÜBERSCHRIEBEN,
-            //WENN ERGEBNIS BESSER IST ALS ZUVOR HINTERLEGTES ERGEBNIS
+            StartCoroutine(SaveScore());
+        }
+    }
+
+    IEnumerator SaveScore()
+    {
+        WWWForm form = new WWWForm();
+        form.AddField("username", DBManager.username);
+        form.AddField("world", 1);
+        form.AddField("level", 1);
+        form.AddField("score", endScore.text);
+        WWW www = new WWW("http://localhost/sqlconnect/writescore.php", form);
+        yield return www;
+
+        if (www.text == "0")
+        {
+            Debug.Log("Successfully written score into database.");
+        }
+        else
+        {
+            Debug.Log("Error while writing score into database.");
+
         }
     }
 
