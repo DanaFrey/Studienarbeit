@@ -12,7 +12,7 @@
     $username = $_POST['username'];
     $world = $_POST['world'];
     $level = $_POST['level'];
-    $score = $_POST['score'];
+    $grade = $_POST['grade'];
 
 
 	$getidquery = "SELECT id FROM players WHERE username='" . $username . "';";
@@ -26,11 +26,18 @@
 
     if($requestresult->num_rows == 0){
         //if there is no entry yet, create an entry
-        $insertentryquery = "INSERT INTO scores (id, world, level, score) VALUES ('" . $id . "', '" . $world . "', '" . $level . "', '" . $score . "');";
+        $insertentryquery = "INSERT INTO scores (id, world, level, grade) VALUES ('" . $id . "', '" . $world . "', '" . $level . "', '" . $grade . "');";
         mysqli_query($con, $insertentryquery) or die("9: Writing entry in database failed."); //Error #9: The entry could not be written into the scores table.
     }else{
-        $updateentryquery = "UPDATE scores SET score='" . $score . "' WHERE id='" . $id . "';";
-        mysqli_query($con, $updateentryquery) or die("10: Updating score entry failed."); //Error #10: The score entry could not be updated.
+        $getcurrentggradequery = "SELECT grade FROM scores WHERE id='" . $id . "' AND world='" . $world . "' AND level='" . $level . "';";
+        $getcurrgrade = $con->query($getcurrentggradequery);
+        $currgrade_row = mysqli_fetch_assoc($getcurrgrade);
+        $currgrade = $currgrade_row['grade'];
+        $newgrade = $grade;
+        if(($newgrade == "A" && ($currgrade == "B") || ($currgrade == "C")|| ($currgrade == "D")|| ($currgrade == "E")|| ($currgrade == "F")) || ($newgrade == "B" && ($currgrade == "C") || ($currgrade == "D")|| ($currgrade == "E")|| ($currgrade == "F")) || ($newgrade == "C" && ($currgrade == "D") || ($currgrade == "E")|| ($currgrade == "F")) || ($newgrade == "D" && ($currgrade == "E") || ($currgrade == "F")) || ($newgrade == "E" && $currgrade == "F")){
+            $updateentryquery = "UPDATE scores SET grade='" . $grade . "' WHERE id='" . $id . "';";
+            mysqli_query($con, $updateentryquery) or die("10: Updating score entry failed."); //Error #10: The score entry could not be updated.
+        }
     }
 
     echo("0");

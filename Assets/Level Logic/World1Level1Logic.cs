@@ -18,6 +18,7 @@ public class World1Level1Logic : MonoBehaviour
     public Text time;
     public Text endScore;
     public Text endTime;
+    private int endTimeInSeconds;
     public GameObject resultScreen;
     public GameObject settingsScreen;
     public GameObject messageBox;
@@ -94,6 +95,7 @@ public class World1Level1Logic : MonoBehaviour
         }
         TimeSpan timeSpan = TimeSpan.FromSeconds(currentTime);
         time.text = timeSpan.Minutes.ToString() + ":" + timeSpan.Seconds.ToString();
+        endTimeInSeconds = (int)currentTime;
     }
 
     public void ReturnToWorld1Menu()
@@ -137,7 +139,7 @@ public class World1Level1Logic : MonoBehaviour
         {
             StopTimer();
             resultScreen.SetActive(true);
-            grade.text = DetermineGrade();
+            grade.text = DetermineGrade(int.Parse(score.text), endTimeInSeconds);
             endTime.text = time.text;
             endScore.text = score.text;
             StartCoroutine(SaveScore());
@@ -150,7 +152,7 @@ public class World1Level1Logic : MonoBehaviour
         form.AddField("username", DBManager.username);
         form.AddField("world", 1);
         form.AddField("level", 1);
-        form.AddField("score", endScore.text);
+        form.AddField("grade", grade.text);
         WWW www = new WWW("http://localhost/sqlconnect/writescore.php", form);
         yield return www;
 
@@ -259,9 +261,9 @@ public class World1Level1Logic : MonoBehaviour
         timerActive = false;
     }
 
-    public string DetermineGrade()
+    public string DetermineGrade(int score, int time)
     {
-        string gradeString = "A+";
+        string gradeString = "A";
         //MUSS NOCH IMPLEMENTIERT WERDEN
         //evtl score durch Zeit vom Timer, dann je nachdem in welcher Range dieses ergebnis is, zuteilung auf grades a bis f
         return gradeString;
