@@ -174,18 +174,8 @@ public class World1Level1Logic : MonoBehaviour
             int scoreInt = Int32.Parse(score.text);
             scoreInt++;
             score.text = scoreInt.ToString();
-            LoadNextEquation();
         }
-        else
-        {
-            int scoreInt = Int32.Parse(score.text);
-            scoreInt--;
-            if(scoreInt < 0)
-            {
-                scoreInt = 0;
-            }
-            score.text = scoreInt.ToString();
-        }
+        LoadNextEquation();
     }
 
     public void DetermineButton2Right()
@@ -195,18 +185,8 @@ public class World1Level1Logic : MonoBehaviour
             int scoreInt = Int32.Parse(score.text);
             scoreInt++;
             score.text = scoreInt.ToString();
-            LoadNextEquation();
         }
-        else
-        {
-            int scoreInt = Int32.Parse(score.text);
-            scoreInt--;
-            if (scoreInt < 0)
-            {
-                scoreInt = 0;
-            }
-            score.text = scoreInt.ToString();
-        }
+        LoadNextEquation();
     }
 
     public void DetermineButton3Right()
@@ -216,18 +196,8 @@ public class World1Level1Logic : MonoBehaviour
             int scoreInt = Int32.Parse(score.text);
             scoreInt++;
             score.text = scoreInt.ToString();
-            LoadNextEquation();
         }
-        else
-        {
-            int scoreInt = Int32.Parse(score.text);
-            scoreInt--;
-            if (scoreInt < 0)
-            {
-                scoreInt = 0;
-            }
-            score.text = scoreInt.ToString();
-        }
+        LoadNextEquation();
     }
 
     public void DetermineButton4Right()
@@ -237,18 +207,8 @@ public class World1Level1Logic : MonoBehaviour
             int scoreInt = Int32.Parse(score.text);
             scoreInt++;
             score.text = scoreInt.ToString();
-            LoadNextEquation();
         }
-        else
-        {
-            int scoreInt = Int32.Parse(score.text);
-            scoreInt--;
-            if (scoreInt < 0)
-            {
-                scoreInt = 0;
-            }
-            score.text = scoreInt.ToString();
-        }
+        LoadNextEquation();
     }
 
     public void StartTimer()
@@ -263,9 +223,42 @@ public class World1Level1Logic : MonoBehaviour
 
     public string DetermineGrade(int score, int time)
     {
-        string gradeString = "A";
-        //MUSS NOCH IMPLEMENTIERT WERDEN
-        //evtl score durch Zeit vom Timer, dann je nachdem in welcher Range dieses ergebnis is, zuteilung auf grades a bis f
+        string gradeString = "";
+        float result = (float) score / (float) time;
+        Debug.Log("Result: " + result);
+        if (0 <= result  && result <= 0.02){
+            gradeString = "F";
+        }else if(0.02 <= result && result < 0.03)
+        {
+            gradeString = "E";
+        }else if (0.03 <= result && result < 0.04)
+        {
+            gradeString = "D";
+        }else if (0.04 <= result && result < 0.071)
+        {
+            gradeString = "C";
+        }else if (0.071 <= result && result < 0.0925)
+        {
+            if (score < 6)
+            {
+                gradeString = "E";
+            }
+            else
+            {
+                gradeString = "B";
+            }
+        }
+        else if (0.0925 <= result)
+        {
+            if(score < 8)
+            {
+                gradeString = "E";
+            }
+            else
+            {
+                gradeString = "A";
+            }
+        }
         return gradeString;
     }
 
