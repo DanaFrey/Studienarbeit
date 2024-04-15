@@ -55,7 +55,7 @@ public class World1Logic : MonoBehaviour
         {
             Debug.LogError("Error while retrieving score data: " + www.error);
         }
-}
+    }
 
     public void ReturnToGameMenu()
     {
