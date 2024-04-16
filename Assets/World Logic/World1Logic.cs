@@ -28,6 +28,7 @@ public class World1Logic : MonoBehaviour
     {
         volumeSettings.Start();
         StartCoroutine(GetScoreLevel1());
+        StartCoroutine(GetScoreLevel2());
     }
 
     IEnumerator GetScoreLevel1()
@@ -57,6 +58,33 @@ public class World1Logic : MonoBehaviour
         }
     }
 
+    IEnumerator GetScoreLevel2()
+    {
+        WWWForm form = new WWWForm();
+        form.AddField("username", DBManager.username);
+        form.AddField("world", 1);
+        form.AddField("level", 2);
+        WWW www = new WWW("http://localhost/sqlconnect/getscore.php", form);
+        yield return www;
+
+        if (string.IsNullOrEmpty(www.error))
+        {
+            if (www.text == "0")
+            {
+
+            }
+            else
+            {
+                scoreLvl2.SetActive(true);
+                level2Grade.text = www.text;
+            }
+        }
+        else
+        {
+            Debug.LogError("Error while retrieving score data: " + www.error);
+        }
+    }
+
     public void ReturnToGameMenu()
     {
         SceneManager.LoadScene("Game Menu");
@@ -65,6 +93,11 @@ public class World1Logic : MonoBehaviour
     public void LoadLevel1()
     {
         SceneManager.LoadScene("World1Level1");
+    }
+
+    public void LoadLevel2()
+    {
+        SceneManager.LoadScene("World1Level2");
     }
 
     public void openSettings()

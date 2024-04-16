@@ -162,7 +162,7 @@ public class World1Level1Logic : MonoBehaviour
         }
         else
         {
-            Debug.Log("Error while writing score into database.");
+            Debug.Log("Error while writing score into database: " + www.text);
 
         }
     }
@@ -225,7 +225,6 @@ public class World1Level1Logic : MonoBehaviour
     {
         string gradeString = "";
         float result = (float) score / (float) time;
-        Debug.Log("Result: " + result);
         if (0 <= result  && result <= 0.02){
             gradeString = "F";
         }else if(0.02 <= result && result < 0.03)

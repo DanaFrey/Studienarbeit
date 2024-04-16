@@ -10,9 +10,9 @@ public class AudioManager : MonoBehaviour
     [Header("---------- Audio Clip ----------")]
     public AudioClip mainscreen;
     public AudioClip click;
-    public AudioClip world1level1;
-    public AudioClip world2level1;
-    public AudioClip world3level1;
+    public AudioClip world1;
+    public AudioClip world2;
+    public AudioClip world3;
 
     public static AudioManager instance;
 
@@ -41,20 +41,27 @@ public class AudioManager : MonoBehaviour
 
     private void ChangeMusic()
     {
-        if (SceneManager.GetActiveScene().name == "World1Level1" && musicSource.clip != world1level1)
+        if (SceneManager.GetActiveScene().name == "World1Level1" && musicSource.clip != world1)
         {
             musicSource.Stop();
-            musicSource.clip = world1level1;
+            musicSource.clip = world1;
             musicSource.Play();
-        }else if(SceneManager.GetActiveScene().name == "World2Level1" && musicSource.clip != world2level1)
+        }
+        else if (SceneManager.GetActiveScene().name == "World1Level2" && musicSource.clip != world1)
         {
             musicSource.Stop();
-            musicSource.clip = world2level1;
+            musicSource.clip = world1;
             musicSource.Play();
-        }else if (SceneManager.GetActiveScene().name == "World3Level1" && musicSource.clip != world3level1)
+        }
+        else if(SceneManager.GetActiveScene().name == "World2Level1" && musicSource.clip != world2)
         {
             musicSource.Stop();
-            musicSource.clip = world3level1;
+            musicSource.clip = world2;
+            musicSource.Play();
+        }else if (SceneManager.GetActiveScene().name == "World3Level1" && musicSource.clip != world3)
+        {
+            musicSource.Stop();
+            musicSource.clip = world3;
             musicSource.Play();
         }
         else if (!(SceneManager.GetActiveScene().name == "World1Level1" || SceneManager.GetActiveScene().name == "World2Level1" || SceneManager.GetActiveScene().name == "World3Level1") && musicSource.clip != mainscreen)

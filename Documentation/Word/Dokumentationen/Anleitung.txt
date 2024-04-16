@@ -18,7 +18,7 @@ SETUP:
 11.	Eine Datenbank namens "studienarbeit" und eine Tabelle mit 4 Spalten namens "players"
 	erstellen (id: int(10), primary, auto-increment; username: varchar(16), unique;
 	hash: varchar(100); salt: varchar(50)) une eine Tabelle namens "scores" mit 4 Spalten 
-	(id: int(10) primary; world: int(10); level: int(10); grade: varchar(16))
+	(id: int(10) primary; world: int(10) primary; level: int(10) primary; grade: varchar(16))
 
 (Bei der Fertigung des Projekts einen Export mit XAMPP erstellen und die Datei zum exportieren mitschicken)
 
