@@ -64,7 +64,7 @@ public class AudioManager : MonoBehaviour
             musicSource.clip = world3;
             musicSource.Play();
         }
-        else if (!(SceneManager.GetActiveScene().name == "World1Level1" || SceneManager.GetActiveScene().name == "World2Level1" || SceneManager.GetActiveScene().name == "World3Level1") && musicSource.clip != mainscreen)
+        else if (!(SceneManager.GetActiveScene().name == "World1Level1" || SceneManager.GetActiveScene().name == "World1Level2" || SceneManager.GetActiveScene().name == "World2Level1" || SceneManager.GetActiveScene().name == "World3Level1") && musicSource.clip != mainscreen)
         {
             musicSource.Stop();
             musicSource.clip = mainscreen;

@@ -114,11 +114,11 @@ public class World1Level2Logic : MonoBehaviour
             withinToleranceMinutes = Quaternion.Angle(handMinutes.transform.rotation, Quaternion.Euler(new Vector3(0, 0, float.Parse(exercises[currEx][2])))) <= tolerance;
             if (withinToleranceHours && withinToleranceMinutes)
             {
+                handHours.transform.rotation = Quaternion.Euler(new Vector3(0, 0, 0));
+                handMinutes.transform.rotation = Quaternion.Euler(new Vector3(0, 0, 0));
                 int scoreInt = Int32.Parse(score.text);
                 scoreInt++;
                 score.text = scoreInt.ToString();
-                handHours.transform.rotation = Quaternion.Euler(new Vector3(0, 0, 0));
-                handMinutes.transform.rotation = Quaternion.Euler(new Vector3(0, 0, 0));
                 //remove the exercise from the exercises array
                 exercises = exercises.Where((value, index) => index != currEx).ToArray();
                 exerciseCount++;
@@ -163,7 +163,7 @@ public class World1Level2Logic : MonoBehaviour
             gameRunning = false;
             StopTimer();
             resultScreen.SetActive(true);
-            grade.text = DetermineGrade(int.Parse(score.text), endTimeInSeconds);
+            grade.text = DetermineGrade(endTimeInSeconds);
             endTime.text = time.text;
             endScore.text = score.text;
             StartCoroutine(SaveScore());
@@ -201,48 +201,34 @@ public class World1Level2Logic : MonoBehaviour
         timerActive = false;
     }
 
-    public string DetermineGrade(int score, int time)
+    public string DetermineGrade(int time)
     {
         string gradeString = "";
-        float result = (float)score / (float)time;
-        if (0 <= result && result <= 0.02)
+        if ((0 <= time && time <= 35) || time >= 160)
         {
             gradeString = "F";
         }
-        else if (0.02 <= result && result < 0.03)
+        else if (140 <= time && time < 160)
         {
             gradeString = "E";
         }
-        else if (0.03 <= result && result < 0.04)
+        else if (120 <= time && time < 140)
         {
             gradeString = "D";
         }
-        else if (0.04 <= result && result < 0.071)
+        else if (100 <= time && time < 120)
         {
             gradeString = "C";
         }
-        else if (0.071 <= result && result < 0.0925)
+        else if (75 <= time && time < 100)
         {
-            if (score < 6)
-            {
-                gradeString = "E";
-            }
-            else
-            {
-                gradeString = "B";
-            }
+            gradeString = "B";
         }
-        else if (0.0925 <= result)
+        else if (35 < time && time < 75)
         {
-            if (score < 8)
-            {
-                gradeString = "E";
-            }
-            else
-            {
-                gradeString = "A";
-            }
+            gradeString = "A";
         }
+
         return gradeString;
     }
 

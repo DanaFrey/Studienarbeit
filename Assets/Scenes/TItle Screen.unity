@@ -2763,7 +2763,7 @@ MonoBehaviour:
   hideCurrentPassButton: {fileID: 2023478310}
   showNewPassButton: {fileID: 2086278789}
   hideNewPassButton: {fileID: 210907964}
-  displayName: {fileID: 0}
+  displayName: {fileID: 1107679183}
 --- !u!4 &951720529
 Transform:
   m_ObjectHideFlags: 0
