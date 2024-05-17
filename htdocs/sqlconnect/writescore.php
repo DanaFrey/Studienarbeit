@@ -1,5 +1,4 @@
 <?php
-
 	$con = mysqli_connect('localhost', 'root', 'root', 'studienarbeit');
 
     //check if the connection was successful
@@ -39,7 +38,5 @@
             mysqli_query($con, $updateentryquery) or die("10: Updating score entry failed."); //Error #10: The score entry could not be updated.
         }
     }
-
     echo("0");
-
 ?>

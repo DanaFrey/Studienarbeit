@@ -1,5 +1,4 @@
 <?php
-
 	$con = mysqli_connect('localhost', 'root', 'root', 'studienarbeit');
 
     //check if the connection was successful
@@ -37,6 +36,4 @@
     }
 
     echo "0";
-
-
 ?>

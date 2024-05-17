@@ -1,5 +1,4 @@
 <?php
-
 	$con = mysqli_connect('localhost', 'root', 'root', 'studienarbeit');
 
     //check if the connection was successful
@@ -36,7 +35,4 @@
     mysqli_query($con, $changepasswordquery) or die("8: Changing password failed."); //Error #8: The password could not be changed.
 
     echo("0");
-
-
-
 ?>

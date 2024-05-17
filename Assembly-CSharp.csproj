@@ -61,7 +61,11 @@
     <Compile Include="Assets\Level Logic\World1Level2Logic.cs" />
     <Compile Include="Assets\World Logic\World2Logic.cs" />
     <Compile Include="Assets\TitleScreenLogic.cs" />
+    <Compile Include="Assets\Level Logic\DragLogicRoof.cs" />
     <Compile Include="Assets\GameMenuLogic.cs" />
+    <Compile Include="Assets\Level Logic\World2Level1Logic.cs" />
+    <Compile Include="Assets\Level Logic\DragLogicCapsule.cs" />
+    <Compile Include="Assets\Level Logic\DragLogic.cs" />
     <Compile Include="Assets\LoginLogic.cs" />
     <Compile Include="Assets\World Logic\World1Logic.cs" />
     <Compile Include="Assets\Fonts\Script\scriptTexttest.cs" />
