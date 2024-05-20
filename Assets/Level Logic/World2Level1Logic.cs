@@ -6,10 +6,12 @@ using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using static Unity.Collections.AllocatorManager;
 
 public class World2Level1Logic : MonoBehaviour
 {
     [SerializeField] private VolumeSettings volumeSettings;
+    public bool goalReached = false;
     public Text score;
     public Text grade;
     public Text time;
@@ -37,6 +39,7 @@ public class World2Level1Logic : MonoBehaviour
     private float currentTime;
     private bool timerActive = false;
     private int taskCount = 0;
+    private bool wait = false;
 
     //strings represent which blocks can be used for this task, [x][0] always reprensents the height of the bar (257 - 557 are 4 good heights)
     //usable blocks are: Roof, Rectangle, Square, Triangle, Circle, Capsule, SmallBar, MediumBar, BigBar, HorizontalSmallBar, HorizontalMediumBar,
@@ -44,13 +47,18 @@ public class World2Level1Logic : MonoBehaviour
     string[][] tasks = new string[][]
     {
         //x tasks
-        new string[] {"257", "Roof", "Square", "Triangle", "Capsule", "Square", "MediumBar"},
-        new string[] {"257", "Roof", "Square", "Triangle", "Capsule", "Square", "MediumBar"},
-        new string[] {"257", "Roof", "Square", "Triangle", "Capsule", "Square", "MediumBar"},
-        new string[] {"257", "Roof", "Square", "Triangle", "Capsule", "Square", "MediumBar"},
-        new string[] {"257", "Roof", "Square", "Triangle", "Capsule", "Square", "MediumBar"},
-        new string[] {"257", "Roof", "Square", "Triangle", "Capsule", "Square", "MediumBar"},
-        new string[] {"257", "Roof", "Square", "Triangle", "Capsule", "Square", "MediumBar"},
+        new string[] {"257", "Capsule", "Capsule", "Capsule", "Capsule", "Capsule", "Capsule"},
+        new string[] {"257", "Capsule", "Capsule", "Capsule", "Capsule", "Capsule", "Capsule"},
+        new string[] {"257", "Capsule", "Capsule", "Capsule", "Capsule", "Capsule", "Capsule"},
+        new string[] {"257", "Capsule", "Capsule", "Capsule", "Capsule", "Capsule", "Capsule"},
+        new string[] {"257", "Capsule", "Capsule", "Capsule", "Capsule", "Capsule", "Capsule"},
+        new string[] {"257", "Capsule", "Capsule", "Capsule", "Capsule", "Capsule", "Capsule"},
+        //new string[] {"257", "Square", "Square", "Square", "Square", "Square", "Square"},
+        //new string[] {"257", "Capsule", "Capsule", "Capsule", "Capsule", "Capsule", "Capsule"},
+        //new string[] {"257", "MediumBar", "MediumBar", "MediumBar", "MediumBar", "MediumBar", "MediumBar"},
+        //new string[] {"257", "Rectangle", "Rectangle", "Rectangle", "Rectangle", "Rectangle", "Rectangle"},
+        //new string[] {"257", "BigBar", "BigBar", "BigBar", "BigBar", "BigBar", "BigBar"},
+        //new string[] {"257", "Roof", "Roof", "Roof", "Roof", "Roof", "Roof"},
     };
 
     void Start()
@@ -71,6 +79,13 @@ public class World2Level1Logic : MonoBehaviour
         TimeSpan timeSpan = TimeSpan.FromSeconds(currentTime);
         time.text = timeSpan.Minutes.ToString() + ":" + timeSpan.Seconds.ToString();
         endTimeInSeconds = (int)currentTime;
+        if (goalReached && !wait)
+        {
+            StartCoroutine(Wait1S());
+            IncreaseScore();
+            DestroyAllBlocks();
+            LoadNextTask();
+        }
     }
 
     public void ReturnToWorld2Menu()
@@ -80,10 +95,13 @@ public class World2Level1Logic : MonoBehaviour
 
     public void LoadNextTask()
     {
+        Debug.Log("hello load next (before try)");
         try
         {
+            Debug.Log("hello load next (after try)");
             if (taskCount == 10)
             {
+                Debug.Log("taskcount==10");
                 throw new IndexOutOfRangeException();
             }
             //pick a random task
@@ -95,87 +113,104 @@ public class World2Level1Logic : MonoBehaviour
             //spawn the given blocks
             for (int i = 1; i < tasks[rInt].Length; i++)
             {
-                //usable blocks are: Roof, Rectangle, Square, Triangle, Circle, Capsule, SmallBar, MediumBar, BigBar, HorizontalSmallBar, HorizontalMediumBar,
-                //                   HorizontalBigBar, HorizontalRectangle
-                Debug.Log("Iteration i = " + i);
                 if (tasks[rInt][i] == "Roof")
                 {
-                    Debug.Log("roof");
                     GameObject block = Instantiate(roofPrefab, new Vector3(0, 0, 0), Quaternion.identity) as GameObject;
-                    Debug.Log("roof2");
                     spawnedBlocks.Add(block);
-                    Debug.Log("roof3");
+                    DragLogicRoof dragLogic = block.GetComponent<DragLogicRoof>();
+                    dragLogic.world2Level1 = FindObjectOfType<World2Level1Logic>();
                 }
                 else if (tasks[rInt][i] == "Square")
                 {
-                    Debug.Log("square");
                     GameObject block = Instantiate(squarePrefab, new Vector3(0, 0, 0), Quaternion.identity) as GameObject;
                     spawnedBlocks.Add(block);
+                    DragLogic dragLogic = block.GetComponent<DragLogic>();
+                    dragLogic.world2Level1 = FindObjectOfType<World2Level1Logic>();
                 }
                 else if (tasks[rInt][i] == "Rectangle")
                 {
                     GameObject block = Instantiate(rectanglePrefab, new Vector3(0, 0, 0), Quaternion.identity) as GameObject;
                     spawnedBlocks.Add(block);
+                    DragLogic dragLogic = block.GetComponent<DragLogic>();
+                    dragLogic.world2Level1 = FindObjectOfType<World2Level1Logic>();
                 }
                 else if (tasks[rInt][i] == "Triangle")
                 {
                     GameObject block = Instantiate(trianglePrefab, new Vector3(0, 0, 0), Quaternion.identity) as GameObject;
                     spawnedBlocks.Add(block);
+                    DragLogic dragLogic = block.GetComponent<DragLogic>();
+                    dragLogic.world2Level1 = FindObjectOfType<World2Level1Logic>();
                 }
                 else if (tasks[rInt][i] == "Circle")
                 {
                     GameObject block = Instantiate(circlePrefab, new Vector3(0, 0, 0), Quaternion.identity) as GameObject;
                     spawnedBlocks.Add(block);
+                    DragLogic dragLogic = block.GetComponent<DragLogic>();
+                    dragLogic.world2Level1 = FindObjectOfType<World2Level1Logic>();
                 }
                 else if (tasks[rInt][i] == "Capsule")
                 {
                     GameObject block = Instantiate(capsulePrefab, new Vector3(0, 0, 0), Quaternion.identity) as GameObject;
                     spawnedBlocks.Add(block);
+                    DragLogicCapsule dragLogic = block.GetComponent<DragLogicCapsule>();
+                    dragLogic.world2Level1 = FindObjectOfType<World2Level1Logic>();
                 }
                 else if (tasks[rInt][i] == "SmallBar")
                 {
                     GameObject block = Instantiate(smallBarPrefab, new Vector3(0, 0, 0), Quaternion.identity) as GameObject;
                     spawnedBlocks.Add(block);
+                    DragLogic dragLogic = block.GetComponent<DragLogic>();
+                    dragLogic.world2Level1 = FindObjectOfType<World2Level1Logic>();
                 }
                 else if (tasks[rInt][i] == "MediumBar")
                 {
                     GameObject block = Instantiate(mediumBarPrefab, new Vector3(0, 0, 0), Quaternion.identity) as GameObject;
                     spawnedBlocks.Add(block);
+                    DragLogic dragLogic = block.GetComponent<DragLogic>();
+                    dragLogic.world2Level1 = FindObjectOfType<World2Level1Logic>();
                 }
                 else if (tasks[rInt][i] == "BigBar")
                 {
                     GameObject block = Instantiate(bigBarPrefab, new Vector3(0, 0, 0), Quaternion.identity) as GameObject;
                     spawnedBlocks.Add(block);
+                    DragLogic dragLogic = block.GetComponent<DragLogic>();
+                    dragLogic.world2Level1 = FindObjectOfType<World2Level1Logic>();
                 }
                 else if (tasks[rInt][i] == "HorizontalSmallBar")
                 {
                     GameObject block = Instantiate(horizontalBarSmallPrefab, new Vector3(0, 0, 0), Quaternion.identity) as GameObject;
                     spawnedBlocks.Add(block);
+                    DragLogic dragLogic = block.GetComponent<DragLogic>();
+                    dragLogic.world2Level1 = FindObjectOfType<World2Level1Logic>();
                 }
                 else if (tasks[rInt][i] == "HorizontalMediumBar")
                 {
                     GameObject block = Instantiate(horizontalBarMediumPrefab, new Vector3(0, 0, 0), Quaternion.identity) as GameObject;
                     spawnedBlocks.Add(block);
+                    DragLogic dragLogic = block.GetComponent<DragLogic>();
+                    dragLogic.world2Level1 = FindObjectOfType<World2Level1Logic>();
                 }
                 else if (tasks[rInt][i] == "HorizontalBigBar")
                 {
                     GameObject block = Instantiate(horizontalBarBigPrefab, new Vector3(0, 0, 0), Quaternion.identity) as GameObject;
                     spawnedBlocks.Add(block);
+                    DragLogic dragLogic = block.GetComponent<DragLogic>();
+                    dragLogic.world2Level1 = FindObjectOfType<World2Level1Logic>();
                 }
                 else if (tasks[rInt][i] == "HorizontalRectangle")
                 {
                     GameObject block = Instantiate(horizontalRectanglePrefab, new Vector3(0, 0, 0), Quaternion.identity) as GameObject;
                     spawnedBlocks.Add(block);
+                    DragLogic dragLogic = block.GetComponent<DragLogic>();
+                    dragLogic.world2Level1 = FindObjectOfType<World2Level1Logic>();
                 }
 
                 if (i == 1)
                 {
-                    Debug.Log("spawne ganz rechts");
                     spawnedBlocks[i - 1].transform.position = new Vector3(1030, 200, -1);
                 }
                 else if(i == 2)
                 {
-                    Debug.Log("spawne fast ganz rechts");
                     spawnedBlocks[i - 1].transform.position = new Vector3(930, 120, -1);
                 }
                 else if (i == 3)
@@ -201,6 +236,7 @@ public class World2Level1Logic : MonoBehaviour
         }
         catch (IndexOutOfRangeException ex)
         {
+            Debug.Log("hello from index out of bounds");
             StopTimer();
             resultScreen.SetActive(true);
             grade.text = DetermineGrade(endTimeInSeconds);
@@ -208,6 +244,24 @@ public class World2Level1Logic : MonoBehaviour
             endScore.text = score.text;
             StartCoroutine(SaveScore());
         }
+    }
+
+    public void IncreaseScore()
+    {
+        int scoreInt = Int32.Parse(score.text);
+        scoreInt++;
+        score.text = scoreInt.ToString();
+    }
+
+    public void DestroyAllBlocks()
+    {
+        for (int i = 0; i < spawnedBlocks.Count; i++)
+        {
+            Destroy(spawnedBlocks[i]);
+            spawnedBlocks.RemoveAt(i);
+            i--;
+        }
+        spawnedBlocks.Clear();
     }
 
     IEnumerator SaveScore()
@@ -287,5 +341,13 @@ public class World2Level1Logic : MonoBehaviour
     {
         messageBox.SetActive(false);
         settingsScreen.SetActive(false);
+    }
+
+    IEnumerator Wait1S()
+    {
+        wait = true;
+        yield return new WaitForSeconds(1);
+        goalReached = false;
+        wait = false;
     }
 }
