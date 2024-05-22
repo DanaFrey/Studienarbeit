@@ -5881,7 +5881,7 @@ MonoBehaviour:
   mainscreen: {fileID: 8300000, guid: 956ad2f73332544fd87365087825cc4f, type: 3}
   click: {fileID: 0}
   world1: {fileID: 8300000, guid: 5059413ec429c4507bb7bca2286fad19, type: 3}
-  world2: {fileID: 0}
+  world2: {fileID: 8300000, guid: 07f391589664f4e85904fa28802b4aa8, type: 3}
   world3: {fileID: 0}
 --- !u!224 &1850862103
 RectTransform:

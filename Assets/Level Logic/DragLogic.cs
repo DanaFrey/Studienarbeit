@@ -11,7 +11,12 @@ public class DragLogic : MonoBehaviour
     public Rigidbody2D rb;
     public World2Level1Logic world2Level1;
     private Rigidbody2D barGoalRb;
+    private float startTime;
 
+    void Start()
+    {
+        startTime = Time.time;
+    }
 
     void Update()
     {
@@ -70,7 +75,7 @@ public class DragLogic : MonoBehaviour
         float top = bounds.max.y;
         //float bottom = bounds.min.y;
         float distance = Mathf.Abs(rb.position.y - goal.position.y);
-        if (distance <= top - rb.position.y && distance >= 0 && dragging == false && rb.velocity == Vector2.zero)
+        if (Time.time - startTime >= 1 && distance <= top - rb.position.y && distance >= 0 && dragging == false && rb.velocity.x >= -3 && rb.velocity.x <= 3 && rb.velocity.y >= -8 && rb.velocity.y <= 8)
         {
             return true;
         }

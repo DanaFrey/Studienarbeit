@@ -46,19 +46,19 @@ public class World2Level1Logic : MonoBehaviour
     //                   HorizontalBigBar, HorizontalRectangle
     string[][] tasks = new string[][]
     {
-        //x tasks
-        new string[] {"257", "Capsule", "Capsule", "Capsule", "Capsule", "Capsule", "Capsule"},
-        new string[] {"257", "Capsule", "Capsule", "Capsule", "Capsule", "Capsule", "Capsule"},
-        new string[] {"257", "Capsule", "Capsule", "Capsule", "Capsule", "Capsule", "Capsule"},
-        new string[] {"257", "Capsule", "Capsule", "Capsule", "Capsule", "Capsule", "Capsule"},
-        new string[] {"257", "Capsule", "Capsule", "Capsule", "Capsule", "Capsule", "Capsule"},
-        new string[] {"257", "Capsule", "Capsule", "Capsule", "Capsule", "Capsule", "Capsule"},
-        //new string[] {"257", "Square", "Square", "Square", "Square", "Square", "Square"},
-        //new string[] {"257", "Capsule", "Capsule", "Capsule", "Capsule", "Capsule", "Capsule"},
-        //new string[] {"257", "MediumBar", "MediumBar", "MediumBar", "MediumBar", "MediumBar", "MediumBar"},
-        //new string[] {"257", "Rectangle", "Rectangle", "Rectangle", "Rectangle", "Rectangle", "Rectangle"},
-        //new string[] {"257", "BigBar", "BigBar", "BigBar", "BigBar", "BigBar", "BigBar"},
-        //new string[] {"257", "Roof", "Roof", "Roof", "Roof", "Roof", "Roof"},
+        //12 tasks
+        new string[] { "357", "Square", "MediumBar", "MediumBar", "HorizontalMediumBar", "Rectangle", "Triangle"},
+        new string[] { "157", "SmallBar", "SmallBar", "Capsule", "HorizontalBigBar", "Square"},
+        new string[] { "100", "SmallBar", "SmallBar", "Roof"},
+        new string[] { "257", "Roof", "Rectangle", "Circle", "Square", "HorizontalBigBar"},
+        new string[] { "190", "HorizontalRectangle", "Roof", "HorizontalBigBar", "SmallBar", "SmallBar"},
+        new string[] { "357", "Circle", "HorizontalBigBar", "Square", "Square", "HorizontalBigBar", "BigBar"},
+        new string[] { "357", "Square", "Capsule", "Rectangle", "MediumBar"},
+        new string[] { "357", "Triangle", "Rectangle", "HorizontalSmallBar", "BigBar"},
+        new string[] { "257", "Rectangle", "Circle", "HorizontalSmallBar", "Capsule", "HorizontalBigBar"},
+        new string[] { "357", "Square", "Rectangle", "Triangle", "SmallBar", "HorizontalRectangle"},
+        new string[] { "410", "HorizontalMediumBar", "MediumBar", "BigBar", "HorizontalRectangle", "Square"},
+        new string[] { "500", "BigBar", "MediumBar", "HorizontalRectangle", "Square", "Triangle", "Capsule"},
     };
 
     void Start()
@@ -95,13 +95,10 @@ public class World2Level1Logic : MonoBehaviour
 
     public void LoadNextTask()
     {
-        Debug.Log("hello load next (before try)");
         try
         {
-            Debug.Log("hello load next (after try)");
-            if (taskCount == 10)
+            if (taskCount == 5)
             {
-                Debug.Log("taskcount==10");
                 throw new IndexOutOfRangeException();
             }
             //pick a random task
@@ -185,14 +182,14 @@ public class World2Level1Logic : MonoBehaviour
                 }
                 else if (tasks[rInt][i] == "HorizontalMediumBar")
                 {
-                    GameObject block = Instantiate(horizontalBarMediumPrefab, new Vector3(0, 0, 0), Quaternion.identity) as GameObject;
+                    GameObject block = Instantiate(horizontalBarMediumPrefab, new Vector3(0, -4, 0), Quaternion.identity) as GameObject;
                     spawnedBlocks.Add(block);
                     DragLogic dragLogic = block.GetComponent<DragLogic>();
                     dragLogic.world2Level1 = FindObjectOfType<World2Level1Logic>();
                 }
                 else if (tasks[rInt][i] == "HorizontalBigBar")
                 {
-                    GameObject block = Instantiate(horizontalBarBigPrefab, new Vector3(0, 0, 0), Quaternion.identity) as GameObject;
+                    GameObject block = Instantiate(horizontalBarBigPrefab, new Vector3(0, -4, 0), Quaternion.identity) as GameObject;
                     spawnedBlocks.Add(block);
                     DragLogic dragLogic = block.GetComponent<DragLogic>();
                     dragLogic.world2Level1 = FindObjectOfType<World2Level1Logic>();
@@ -236,7 +233,6 @@ public class World2Level1Logic : MonoBehaviour
         }
         catch (IndexOutOfRangeException ex)
         {
-            Debug.Log("hello from index out of bounds");
             StopTimer();
             resultScreen.SetActive(true);
             grade.text = DetermineGrade(endTimeInSeconds);
@@ -298,27 +294,27 @@ public class World2Level1Logic : MonoBehaviour
     public string DetermineGrade(int time)
     {
         string gradeString = "";
-        if ((0 <= time && time <= 35) || time >= 160)
+        if ((0 <= time && time <= 60) || time >= 190)
         {
             gradeString = "F";
         }
-        else if (140 <= time && time < 160)
+        else if (170 <= time && time < 190)
         {
             gradeString = "E";
         }
-        else if (120 <= time && time < 140)
+        else if (150 <= time && time < 170)
         {
             gradeString = "D";
         }
-        else if (100 <= time && time < 120)
+        else if (130 <= time && time < 150)
         {
             gradeString = "C";
         }
-        else if (75 <= time && time < 100)
+        else if (115 <= time && time < 130)
         {
             gradeString = "B";
         }
-        else if (35 < time && time < 75)
+        else if (60 < time && time < 115)
         {
             gradeString = "A";
         }

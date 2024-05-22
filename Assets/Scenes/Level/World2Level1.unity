@@ -364,9 +364,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: World1Level1Logic, Assembly-CSharp
-        m_MethodName: ResumeButton
+      - m_Target: {fileID: 1903643593}
+        m_TargetAssemblyTypeName: World2Level1Logic, Assembly-CSharp
+        m_MethodName: ReturnToWorld2Menu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
