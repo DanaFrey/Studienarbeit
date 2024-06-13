@@ -1,8 +1,5 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Networking;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class LoginLogic : MonoBehaviour
@@ -33,6 +30,7 @@ public class LoginLogic : MonoBehaviour
         newPassword.contentType = InputField.ContentType.Password;
     }
 
+
     public void CallRegister()
     {
         StartCoroutine(Register());
@@ -50,7 +48,7 @@ public class LoginLogic : MonoBehaviour
 
     IEnumerator Register()
     {
-        //eventually, change from WWWForm to newer UnityWebRequest, possible approach:
+        //eventually, change from WWWForm to newer UnityWebRequest, first possible approach:
         //WWWForm form = new WWWForm();
         //form.AddField("username", username.text);
         //form.AddField("password", password.text);

@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class DragLogicCapsule : MonoBehaviour
@@ -31,18 +29,14 @@ public class DragLogicCapsule : MonoBehaviour
             {
                 Vector3 newPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition) + offset;
 
-                // Überprüfe, ob es zu Kollisionen kommt
                 Collider2D[] colliders = Physics2D.OverlapBoxAll(newPosition, transform.localScale, 0);
                 foreach (Collider2D collider in colliders)
                 {
                     if (collider.gameObject != gameObject)
                     {
-                        // Wenn eine Kollision mit einem anderen Objekt auftritt, breche den Drag-Vorgang ab
                         return;
                     }
                 }
-
-                // Bewege das Objekt, wenn keine Kollisionen festgestellt wurden
                 transform.position = newPosition;
             }
             if (IsGoalReached(barGoalRb))
@@ -57,7 +51,6 @@ public class DragLogicCapsule : MonoBehaviour
         offset = transform.position - Camera.main.ScreenToWorldPoint(Input.mousePosition);
         dragging = true;
 
-        // Setze die Geschwindigkeit des Rigidbody auf Null
         rb.velocity = Vector2.zero;
     }
 
@@ -70,7 +63,6 @@ public class DragLogicCapsule : MonoBehaviour
     {
         Bounds bounds = gameObject.GetComponent<SpriteRenderer>().bounds;
         float top = bounds.max.y;
-        //float bottom = bounds.min.y;
         float distance = Mathf.Abs(rb.position.y - goal.position.y);
         if (Time.time - startTime >= 1 && distance <= top - rb.position.y && distance >= 0 && dragging == false && rb.velocity.x >= -3 && rb.velocity.x <= 3 && rb.velocity.y >= -8 && rb.velocity.y <= 8)
         {

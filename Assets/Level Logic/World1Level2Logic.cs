@@ -143,7 +143,6 @@ public class World1Level2Logic : MonoBehaviour
     {
         try
         {
-            //MAYBE NOCH ANDERE ANZAHL ALS 10 NEHMEN
             if (exerciseCount == 10 && exercises.Length == 0 || exerciseCount == 10)
             {
                 throw new IndexOutOfRangeException();

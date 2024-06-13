@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class DragLogicRoof : MonoBehaviour
@@ -33,18 +31,14 @@ public class DragLogicRoof : MonoBehaviour
 
                 transform.rotation = Quaternion.Euler(0, 0, -45);
 
-                // Überprüfe, ob es zu Kollisionen kommt
                 Collider2D[] colliders = Physics2D.OverlapBoxAll(newPosition, transform.localScale, 0);
                 foreach (Collider2D collider in colliders)
                 {
                     if (collider.gameObject != gameObject)
                     {
-                        // Wenn eine Kollision mit einem anderen Objekt auftritt, breche den Drag-Vorgang ab
                         return;
                     }
                 }
-
-                // Bewege das Objekt, wenn keine Kollisionen festgestellt wurden
                 transform.position = newPosition;
             }
             if (IsGoalReached(barGoalRb))
@@ -59,7 +53,6 @@ public class DragLogicRoof : MonoBehaviour
         offset = transform.position - Camera.main.ScreenToWorldPoint(Input.mousePosition);
         dragging = true;
 
-        // Setze die Geschwindigkeit des Rigidbody auf Null
         rb.velocity = Vector2.zero;
     }
 

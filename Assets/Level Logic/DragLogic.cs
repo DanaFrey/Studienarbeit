@@ -1,6 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using System.Threading;
 using UnityEngine;
 
 public class DragLogic : MonoBehaviour
@@ -34,18 +31,14 @@ public class DragLogic : MonoBehaviour
 
                 transform.rotation = Quaternion.Euler(0, 0, 0);
 
-                // Überprüfe, ob es zu Kollisionen kommt
                 Collider2D[] colliders = Physics2D.OverlapBoxAll(newPosition, transform.localScale, 0);
                 foreach (Collider2D collider in colliders)
                 {
                     if (collider.gameObject != gameObject)
                     {
-                        // Wenn eine Kollision mit einem anderen Objekt auftritt, breche den Drag-Vorgang ab
                         return;
                     }
                 }
-
-                // Bewege das Objekt, wenn keine Kollisionen festgestellt wurden
                 transform.position = newPosition;
             }
             if (IsGoalReached(barGoalRb))
@@ -60,7 +53,6 @@ public class DragLogic : MonoBehaviour
         offset = transform.position - Camera.main.ScreenToWorldPoint(Input.mousePosition);
         dragging = true;
 
-        // Setze die Geschwindigkeit des Rigidbody auf Null
         rb.velocity = Vector2.zero;
     }
 
@@ -73,7 +65,6 @@ public class DragLogic : MonoBehaviour
     {
         Bounds bounds = gameObject.GetComponent<SpriteRenderer>().bounds;
         float top = bounds.max.y;
-        //float bottom = bounds.min.y;
         float distance = Mathf.Abs(rb.position.y - goal.position.y);
         if (Time.time - startTime >= 1 && distance <= top - rb.position.y && distance >= 0 && dragging == false && rb.velocity.x >= -3 && rb.velocity.x <= 3 && rb.velocity.y >= -8 && rb.velocity.y <= 8)
         {
@@ -84,23 +75,4 @@ public class DragLogic : MonoBehaviour
             return false;
         }
     }
-
-    //private void OnCollisionEnter2D(Collision2D collision)
-    //{
-    //    GameObject otherGameObject = collision.gameObject;
-    //
-    //   if (otherGameObject.CompareTag("BarGoal"))
-    //    {
-    //        Debug.Log("Tag is right!");
-    //        if(dragging == false && rb.velocity == Vector2.zero)
-    //        {
-    //            isGoalReached = true;
-    //        }
-    //    }
-    //    else
-    //    {
-    //       isGoalReached = false;
-    //    }
-    //
-    //}
 }
