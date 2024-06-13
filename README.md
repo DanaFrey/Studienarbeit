@@ -14,7 +14,11 @@ Nutzung der Datenbank für das Spiel:
 
 
 Verwendete Assets aus dem AssetStore:
+
 •	Buttons: https://assetstore.unity.com/packages/2d/gui/icons/371-simple-buttons-pack-97516
+
 •	Boxen: https://assetstore.unity.com/packages/2d/gui/puzzle-stage-settings-gui-pack-147389
+
 •	Musik: https://assetstore.unity.com/packages/audio/music/free-music-tracks-for-games-156413
+
 •	Font: https://assetstore.unity.com/packages/2d/fonts/bubble-font-free-version-24987
