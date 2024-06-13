@@ -9,7 +9,6 @@ public class GameMenuLogic : MonoBehaviour
     [SerializeField] private VolumeSettings volumeSettings;
     public Button world1;
     public Button world2;
-    public Button world3;
     public GameObject messageBox;
     public Text messageText;
     public GameObject scoreWorld1;
@@ -207,7 +206,6 @@ public class GameMenuLogic : MonoBehaviour
         {
             world1.interactable = true;
             world2.interactable = true;
-            world3.interactable = true;
         }
         else
         {
@@ -230,15 +228,10 @@ public class GameMenuLogic : MonoBehaviour
     {
         SceneManager.LoadScene("World 2");
     }
-    public void LoadWorld3()
-    {
-        SceneManager.LoadScene("World 3");
-    }
 
     public void AllButtonsLocked()
     {
         world1.interactable = false;
         world2.interactable = false;
-        world3.interactable = false;
     }
 }
